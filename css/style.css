@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #33313B;
+}
+
+h6, p {
+    color: #33313B;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 600px;
+    height: auto;
+}
+
+header {
+    height: 90px;
+    /*background-color: #EAD4C0;*/
+    background-color: #4592AF;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.headerWrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.headerWrap>p {
+    align-items: center;
+    /*font-family: "Lato", sans-serif;*/
+    font-size: 28px;
+    line-height: 36px;
+    margin: 0 2em;
+    color: #F1F7FA;
+}
+
+nav {
+    margin: 0 0 0 auto;
+}
+
+.headerWrap ul, .contactMe ul {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.headerWrap li, .contactMe li {
+    flex-direction: row-reverse;
+    margin: 0 1.2vw;
+    font-size: 24px;
+}
+
+li a {
+    text-decoration: none;
+    color: #F1F7FA;
+    
+}
+
+header li:hover, footer li:hover {
+    background-color: #37738A;
+}
+
+.aboutMe {
+    background-color: #F1F7FA;
+    /*display: flex;
+    justify-content: center;
+    flex-wrap: wrap;*/
+}
+
+h6 {
+    font-size: 32px;
+    line-height: 36px;
+    /*width: 100%;*/
+    padding: 1.5em 0;
+    text-align: center;
+    /*font-family: "Lato", sans-serif;*/
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 1em 0;
+    text-align: center;
+    /*font-family: "Lato", sans-serif;*/
+    font-weight: 500;
+}
+
+.meImgLeft {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.meImgLeft img {
+    padding: 8vw;
+}
+
+.meImgLeftText {
+    flex-direction: column;
+    padding: 8vw 8vw 8vw 0;
+}
+
+.meImgLeftText p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.callToAction {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 8em;
+}
+
+.callToAction p {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 2em;
+}
+
+.callToAction button {
+    display: flex;
+    align-items: center;
+    background-color: #4592AF;
+    border: none;
+
+    padding: 1.5em 2em;
+}
+
+.callToAction button a {
+    color: #F1F7FA;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 0.8em;
+}
+
+.callToAction button a:hover {
+    text-decoration: underline;
+}
+
+.callToAction button img {
+    margin: 0.4em;
+}
+
+.portfolio {
+    background-color: #BBD9E4;
+}
+
+.imgLeft, .imgRight {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imgLeft img, .imgRight img, .gameOverview img {
+    max-width: 600px;
+    height: auto;
+    padding: 4vw;
+}
+
+.imgLeftText {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgLeft p, .imgRight p {
+    padding: 0 4vw;
+    line-height: 1.6;
+}
+
+.imgLeftButtons, .imgRightButtons, .gamePageButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: rgba(69,146,175,0);
+    border: 6px solid #4592AF;
+    padding: 1em;
+    margin: 2em 0;
+}
+
+.imgLeft button a, .imgRight button a, .gamePageButtons a {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+footer {
+    background-color: #85BBCE;
+}
+
+.contactMe p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.contactMe p:not(.footerLeft) {
+    text-align: center;
+}
+
+footer ul {
+    width: 100%;
+    justify-content: center;
+}
+
+
+footer ul li {
+    margin: 1em 2em;
+}
+
+.gamePresent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gamePresent img {
+    margin: 2em auto;
+}
+
+.gameOverviewText {
+    margin-bottom: 2em;
+    padding: 1em 8em;
+    line-height: 1.6;
+}
+
+.gameOverviewImages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectVersion {
+    background-color: #C07C3D;
+    padding: 0 8em;
+}
+
+.latestVersion {
+    background-color: #74A937;
+    padding: 0 8em;
+}
+
+.projectVersion *, .latestVersion * {
+    color: #F1F7FA;
+}
+
+.projectVersion h5, .latestVersion h5 {
+    display: block;
+    color: #F1F7FA;
+    font-size: 24px;
+    padding: 1em 0;
+    text-align: center;
+    /*font-family: "Lato", sans-serif;*/
+    font-weight: 500;
+}
+
+.projectVersion h6, .latestVersion h6 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.projectVersion ul, .latestVersion ul {
+    padding-bottom: 1em;
+}
+
+.projectVersion li, .latestVersion li {
+    list-style-type: square;
+}
+
+.projectVersion li p, .latestVersion li p {
+    font-size: 18px;
+    padding: 0.5em 0;
+    /*font-family: "Lato", sans-serif;*/
+    font-weight: 500;
+}
+
+.projectVersion img, .latestVersion img {
+    display: block;
+    margin: auto;
+    padding: 2em 0;
+}
+
+.gameContactMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gameContactMeWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameFooterList {
+    display: inline-flex;
+}
+
+.gameFooterList li {
+    list-style-type: none;
+}
+
+.rights {
+    padding: 2em;
+    text-align: center;
+}
