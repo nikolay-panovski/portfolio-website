@@ -21,6 +21,13 @@ img {
     height: auto;
 }
 
+iframe {
+    max-width: 600px;
+    max-height: 400px;  /* e */
+    margin: 2em auto;
+    border-style: none;
+}
+
 header {
     height: 90px;
     /*background-color: #EAD4C0;*/
@@ -60,6 +67,7 @@ nav {
     flex-direction: row-reverse;
     margin: 0 1.2vw;
     font-size: 24px;
+    transition: 0.4s;
 }
 
 li a {
@@ -70,6 +78,7 @@ li a {
 
 header li:hover, footer li:hover {
     background-color: #37738A;
+    border-radius: 8px;
 }
 
 .aboutMe {
@@ -138,6 +147,8 @@ h5 {
     border: none;
 
     padding: 1.5em 2em;
+    
+    transition: 0.25s;
 }
 
 .callToAction button a {
@@ -146,10 +157,16 @@ h5 {
     text-decoration: none;
     font-size: 20px;
     margin-left: 0.8em;
+    
+    transition: 0.25s;
+}
+
+.callToAction button:hover {
+    background-color: #F1F7FA;
 }
 
 .callToAction button a:hover {
-    text-decoration: underline;
+    color: #4592AF;
 }
 
 .callToAction button img {
@@ -188,6 +205,14 @@ h5 {
     justify-content: space-around;
 }
 
+.imgLeftButtons button, .imgRightButtons button, .gamePageButtons button {
+    transition: 0.3s;
+}
+
+.imgLeftButtons button:hover, .imgRightButtons button:hover, .gamePageButtons button:hover {
+    background-color: #4592AF;
+}
+
 button {
     box-sizing: border-box;
     border-radius: 12px;
@@ -201,6 +226,10 @@ button {
     text-decoration: none;
     font-size: 24px;
     line-height: 36px;
+}
+
+.imgLeft button a:hover, .imgRight button a:hover, .gamePageButtons a:hover {
+    color: #F1F7FA;
 }
 
 footer {
@@ -254,6 +283,10 @@ footer ul li {
     padding: 0 8em;
 }
 
+.gameTeamComposition {
+    padding: 0 8em;
+}
+
 .latestVersion {
     background-color: #74A937;
     padding: 0 8em;
@@ -263,7 +296,7 @@ footer ul li {
     color: #F1F7FA;
 }
 
-.projectVersion h5, .latestVersion h5 {
+.projectVersion h5, .latestVersion h5, .gameTeamComposition h5 {
     display: block;
     color: #F1F7FA;
     font-size: 24px;
@@ -273,17 +306,18 @@ footer ul li {
     font-weight: 500;
 }
 
-.projectVersion h6, .latestVersion h6 {
+.projectVersion h6, .latestVersion h6, .gameTeamComposition h6 {
     font-size: 24px;
     text-align: left;
 }
 
-.projectVersion ul, .latestVersion ul {
+.projectVersion ul, .latestVersion ul, .gameTeamComposition ul {
     padding-bottom: 1em;
 }
 
-.projectVersion li, .latestVersion li {
+.projectVersion li, .latestVersion li, .gameTeamComposition li {
     list-style-type: square;
+    margin-bottom: 0.8em;
 }
 
 .projectVersion li p, .latestVersion li p {
