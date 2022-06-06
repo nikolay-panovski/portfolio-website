@@ -192,6 +192,15 @@ h5 {
 .imgLeftText {
     display: flex;
     flex-direction: column;
+    flex-basis: 50%;
+}
+
+.imgRightText {
+    flex-basis: 50%;
+}
+
+.imgLeftText p, .imgRightText p {
+    /* TODO: proper definitions to take up 50% of the width - is above enough? */
 }
 
 .imgLeft p, .imgRight p {
