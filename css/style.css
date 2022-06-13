@@ -373,3 +373,10 @@ footer ul li {
     padding: 2em;
     text-align: center;
 }
+
+/* warning that Furfare page is temp, because the project is ongoing */
+.attention {
+    text-align: center;
+    color: darkred;
+    font-size: 1.5rem;
+}
