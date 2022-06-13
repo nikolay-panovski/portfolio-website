@@ -76,7 +76,7 @@ nav {
     transition: 0.4s;
 }
 
-li a {
+li a, header a {
     text-decoration: none;
     color: #F1F7FA;
     
