@@ -34,10 +34,9 @@
             <section class="gamePresent">
                 <h5>Furfare</h5>
                 
-                <!-- TODO: move styling to CSS -->
-                <h3 class="attention">Attention: This is an ongoing project and the content on this page is subject to change.</h3>
+                <h3 class="attention">Attention: This is an ongoing project and the content on this page is subject to updates.</h3>
                 
-                <img src="../site_images/game1_beans.jpg" alt="Furfare (Bomberman/dodgeball game)">
+                <img src="../site_images/furfare_main_menu_temp.png" alt="Furfare (Bomberman/dodgeball game)">
 
                 <section class="gamePageButtons">
                     <button type="button">
@@ -49,7 +48,8 @@
                     </button>
                 </section>
                 
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TA4xOB_74jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- TODO: CHANGE HERE WITH PROGRESS VIDEO -->
+                <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TA4xOB_74jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
                 <section class="portfolio">
                     <h6>Overview</h6>
@@ -68,44 +68,44 @@
                         </section>
                         
                         <section class="gameOverviewText">
-                            <p>This was part of a project with the assignment of creating a point-and-click game
-                                within the Java-based Processing language. The player must first communicate with
-                                the puzzle-giving NPCs and uncover the puzzles, then explore other objects in each
-                                room to find the solutions. Some puzzles involve cracking a code or solving a riddle
-                                by reading the provided clues, others require collecting items in an inventory and
-                                using them in the proper place.
+                            <p>In this project, I am working in a team for the client WIRWAR,
+                                an organization hosting a gaming festival for Twente. Following
+                                this theme, the game developed is a competitive multiplayer party game -
+                                Bomberman meets Dodgeball in a game where cats and dogs try to hit each
+                                other with whatever projectiles they can find, wreak havoc, and score the
+                                most points to win!
                             </p>
                         </section>
                         <section class="gameOverviewImages">
-                            <img src="../site_images/game1_puzzleA.png" alt="Library room puzzle">
-                            <img src="../site_images/game1_puzzleB.jpg" alt="Brewery room puzzle">
+                            <img src="../site_images/nongameplay_gif.gif" alt="Current progress on non-gameplay screens (GIF)">
+                            <img src="" alt="Placeholder">
                         </section>
                     </section>
                 </section>
             </section>
 
             <section class="projectVersion">
-                <h5>v1.0 (Project hand-in)</h5>
+                <h5>v0.3 (current after second user playtest)</h5>
 
                 <h6>Tasks during the project:</h6>
                 <ul>
-                    <li><p>Dialog box system - with flexible conditions to enable (click on story character/
-                        be in a certain room with certain items in inventory) and easy disabling (insert
-                        an empty text string in the class)</p></li>
-                    <li><p>Inventory system - receiving/returning up to 6 collectable objects from/to the
-                        current scene</p></li>
-                    <li><p>Code/sequence puzzle verification system based on integer values</p></li>
-                    <li><p>Basic menu system</p></li>
+                    <li><p>Implement player movement, collisions and different projectile types</p></li>
+                    <li><p>Implement non-gameplay UI functionality (button selections for scene transitions, characters, levels)</p></li>
+                    <li><p>Create objects responsible for input / cursors</p></li>
+                    <li><p>Handle communication between objects with minimum direct coupling (using event queue)</p></li>
+                </ul>
+                
+                <h6>Ongoing tasks:</h6>
+                <ul>
+                    <li><p>Finish the game loop - implement level selection and winner screens, and carry
+                        over player selections to gameplay screens and results out of there</p></li>
+                    <li><p>Implement timely feedback - particles and animations</p></li>
+                    <li><p>Remove buggy interactions and find optimization bottlenecks</p></li>
                 </ul>
 
-                <img src="../site_images/game1_dialogbox.png" alt="Code for dialog boxes">
+                <img src="" alt="Placeholder for code or prototype">
             </section>
-            
-            <section class="latestVersion">
-                <h5>v1.1</h5>
 
-                <h6>WIP - focus on re-implementing dialog boxes in a more automatic way</h6>
-            </section>
         </main>
 
         <footer>
@@ -120,10 +120,10 @@
                     </ul>
 
                     <p class="gameEmail">Email: nikipanovski@gmail.com</p>  
+                    <br> <!-- REMOVE -->
                 </section>
             </section>
 
-            <p class="rights">(ɔ) 2021 No rights reserved</p>
         </footer>
     </body>
 </html>

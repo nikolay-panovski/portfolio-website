@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+/* consider @media <mobile> below 720px width */
 
 * {
     margin: 0;
@@ -6,6 +7,8 @@
     font-family: 'Lato', sans-serif;
     color: #33313B;
 }
+
+/* TODO: ENTIRE structure needs re-wireframing to pinpoint the common elements and handle them commonly in CSS/flexbox */
 
 /* default font size (html root) = 16px */
 /* rem = relative units to root element */
@@ -20,7 +23,7 @@ p {
 }
 
 img {
-    max-width: 600px;
+    max-width: 50vw;    /* use 50vw MINUS side margins */
     height: auto;
 }
 
@@ -114,18 +117,22 @@ h5 {
 }
 
 .meImgLeft {
-    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    
+    margin: 0 16vw;             /* flex violates margin if it needs to */
 }
 
 .meImgLeft img {
-    padding: 8vw;
+    /* width = min-width if min-width exists (?!?) */
+    max-width: 20vw;
 }
 
 .meImgLeftText {
     flex-direction: column;
-    padding: 8vw 8vw 8vw 0;
+    padding-left: 4vw;
+    /*padding: 8vw 8vw 8vw 0;*/
 }
 
 .meImgLeftText p {
@@ -137,7 +144,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 8em;
+    margin-right: 16vw;         /* try keep the same as .meImgLeft margin */
 }
 
 .callToAction p {
@@ -168,7 +175,7 @@ h5 {
 }
 
 .callToAction button:hover {
-    background-color: #F1F7FA;
+    background-color: #65A2CF;
 }
 
 .callToAction button a:hover {
@@ -184,15 +191,28 @@ h5 {
 }
 
 .imgLeft, .imgRight {
-    width: 100%;
     display: flex;
     align-items: center;
+    
+    margin: 0 12vw;
 }
 
-.imgLeft img, .imgRight img, .gameOverview img {
-    max-width: 600px;
-    height: auto;
-    padding: 4vw;
+.imgLeft div, .imgRight div, .gameOverview div {
+    /* TODO: define min width */
+    flex-basis: 50%;        /* use 50vw MINUS side margins */
+    padding: 4vw 0;
+}
+
+.imgLeft div {
+    padding-right: 4vw;
+}
+
+.imgRight div {
+    padding-left: 4vw;
+}
+
+.imgLeft div img, .imgRight div img, .gameOverview div img {
+    max-width: 100%;    /* of the above flex-basis */
 }
 
 .imgLeftText {
@@ -252,7 +272,7 @@ footer {
 }
 
 .contactMe p {
-    font-size: 18px;
+    font-size: 1.125rem;
     max-width: 600px;
     margin: 0 auto;
     padding: 2em 0;
@@ -279,7 +299,9 @@ footer ul li {
 }
 
 .gamePresent img {
-    margin: 2em auto;
+    max-width: 34vw;    /* tied to gameOverviewImages below */
+    
+    margin: 2em auto;   /* ~~band-aided */
 }
 
 .gameOverviewText {
@@ -290,7 +312,12 @@ footer ul li {
 
 .gameOverviewImages {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
 }
 
 .projectVersion {
@@ -343,9 +370,13 @@ footer ul li {
 }
 
 .projectVersion img, .latestVersion img {
+    
     display: block;
     margin: auto;
     padding: 2em 0;
+    
+    
+    max-width: 34vw;    /* tied to gameOverviewImages below, also on band-aid like gamePresent img */
 }
 
 .gameContactMe {
