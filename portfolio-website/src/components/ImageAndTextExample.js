@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 function ImageAndTextExample() {
   return (
     <>
-      <Card className="d-flex">
+      <Card className="d-flex" style={{margin: "0 15%"}}>
         <Row>
           <Col xs={4}>  {/* out of 12 as the 100% */}
             <Card.Img src="logo512.png" />
