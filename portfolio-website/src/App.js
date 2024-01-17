@@ -4,14 +4,18 @@ import ImageAndTextExample from './components/ImageAndTextExample';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello World text.
-        </p>
-        <ImageAndTextExample />
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <header className="App-header">
+          <p>
+            Hello World text.
+          </p>
+          <ImageAndTextExample />
+        </header>
+      </div>
+
+      {/* Icons by icons8.com */}
+    </>
   );
 }
 
