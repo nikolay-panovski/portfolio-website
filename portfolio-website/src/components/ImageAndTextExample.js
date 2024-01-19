@@ -3,6 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 import ProjectProperty from './ProjectProperty';
+import ProjectPropertyExpandable from './ProjectPropertyExpandable';
 
 import { ReactComponent as UnityLogo } from "icons/icons8-unity.svg";
 import ProcessingLogo from "icons/processing-1024.png";
@@ -10,16 +11,21 @@ import ProcessingLogo from "icons/processing-1024.png";
 function ImageAndTextExample() {
   return (
     <>
-      <Card className="d-flex" style={{margin: "0 15%"}}>
+      <Card className="d-flex" style={{margin: "1rem 15%"}}>
         <Row>
           <Col xs={4}>  {/* out of 12 as the 100% */}
-            <Card.Img src="logo512.png" />
+            <div style={{width:"100%", height:"100%", background:"center/cover url(logo512.png)"}} ></div>
           </Col>
           <Col>
             <Card.Body>
-            <Card.Title>IMT&S Unity Prototype</Card.Title>
-              <ProjectProperty icon={<UnityLogo width="48px" height="48px"/>} describerText="Engine" propertyValue="Unity"/>
-              <ProjectProperty icon={<img src={ProcessingLogo} alt="Processing 3 logo" width="48px" height="48px"/>} describerText="Engine" propertyValue="Processing"/>
+              <Card.Title as="div" className="h4">IMT&S Unity Prototype</Card.Title>
+              <ProjectProperty icon={<UnityLogo width="48px" height="48px"/>} describerText="Duration" propertyValue="2 weeks"/>
+              <ProjectProperty icon={<UnityLogo width="48px" height="48px"/>} describerText="Language" propertyValue="C#"/>
+              <div className="d-flex flex-row justify-content-start">
+                <ProjectPropertyExpandable icon={<UnityLogo width="48px" height="48px"/>} propertyValue="Unity"/>
+                <ProjectPropertyExpandable icon={<img src={ProcessingLogo} alt="Processing 3 logo" width="48px" height="48px"/>} propertyValue="Processing"/>
+              </div>
+              
               <Card.Text>
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
