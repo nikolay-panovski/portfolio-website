@@ -1,12 +1,14 @@
-import styles from "components/ExpandingButton.css";
+
 
 function ProjectProperty({ icon, describerText, propertyValue }) {
     return (
         <>
-            <button className="expand-btn d-flex align-items-center flex-row m-2 p-3 rounded-pill" style={{ }}>
-                <span className="expand-btn-icon px-2">{icon ?? <></>}</span>
-                <span className="expand-btn-text">{describerText ? <p className="h4">{describerText}: {propertyValue}</p> : <></>}</span>
-            </button>
+            <div className="d-flex flex-row justify-content-start align-items-center m-2">
+                {icon ?? <></>}
+                {describerText ? <p className="h5">{describerText}: {propertyValue}</p>
+                            : <p className="h5">{propertyValue}</p>}
+            </div>
+
         </>
     );
 }
