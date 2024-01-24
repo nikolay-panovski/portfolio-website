@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,37 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* Expanding button section - adapted from https://stackoverflow.com/a/60926904 */
+
+.expand-container {
+  position: relative;
+}
+
+.expand-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+  background-color: transparent;
+  color: #fff;
+  -webkit-transition: width 0.25s;
+  transition: width 0.25s;
+}
+
+.expand-btn .expand-btn-text {
+  max-width: 0;
+  display: inline-block;
+  -webkit-transition: max-width 1s;
+  transition: max-width 1s;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+}
+
+.expand-btn:hover .expand-btn-text {
+  max-width: 500px;
 }

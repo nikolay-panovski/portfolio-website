@@ -1,4 +1,3 @@
-import styles from "components/ExpandingButton.css";
 
 function ProjectPropertyExpandable({ icon, describerText, propertyValue }) {
     return (
