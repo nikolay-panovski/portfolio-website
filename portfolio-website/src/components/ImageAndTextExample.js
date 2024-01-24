@@ -22,7 +22,7 @@ function ImageAndTextExample() {
               <Card.Title as="div" className="h4">IMT&S Unity Prototype</Card.Title>
               <ProjectProperty icon={<UnityLogo width="36px" height="36px"/>} describerText="Duration" propertyValue="2 weeks"/>
               <ProjectProperty icon={<UnityLogo width="36px" height="36px"/>} propertyValue="Individual"/>
-              <div className="d-flex flex-row justify-content-start">
+              <div className="d-flex flex-row flex-wrap justify-content-start">
                 <ProjectPropertyExpandable icon={<UnityLogo width="36px" height="36px"/>} propertyValue="Unity"/>
                 <ProjectPropertyExpandable icon={<CSLogo width="36px" height="36px"/>} propertyValue="C#"/>
               </div>
