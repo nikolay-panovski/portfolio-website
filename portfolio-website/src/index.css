@@ -21,11 +21,11 @@ code {
 
 @layer components {
   .card-border {
-    @apply border-solid border rounded border-black/25;
+    @apply border-solid border rounded-xl border-black/25;
   }
 
   .card-my {
-    @apply my-4
+    @apply my-8
   }
 
   .card-mx {
