@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Katahdin Round";
+  src: url("./font/KatahdinRound-Bold.otf");
+}
+@font-face {
+  font-family: "Simply Rounded Bold";
+  src: url("./font/Simply\ Rounded\ Bold.ttf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,6 +25,14 @@ code {
     monospace;
 }
 
+
+header h1 {
+  font-family: 'Katahdin Round', sans-serif;
+}
+
+header h3 {
+  font-family: 'Simply Rounded Bold', sans-serif;
+}
 
 /* Expanding button section - adapted from https://stackoverflow.com/a/60926904 */
 
