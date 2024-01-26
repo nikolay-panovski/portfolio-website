@@ -3,21 +3,22 @@ import Face from "photos/492686_square.jpg";
 function HeaderGraphic() {
     return (
         <>
-            <div className="d-flex" style={{position:"relative", width:"100%", height:"67vh"}}>
-                <div style={{position:"relative", width:"50%", height:"100%"}}>
+            <div className="flex flex-row relative w-full h-[67vh]">
+                <div className="relative w-1/2 h-full">
                     {/*img x 4, grid */}
-                    <p className="h3 pr-8" style={{textAlign:"right", position:"absolute", width:"100%", top:"80%" }}>Video games</p>
+                    <h3 className="text-3xl pr-8 text-right absolute w-full top-[80%]">Video games</h3>
                 </div>
 
                 {/* middle: vertical line with image in center, on top of the regular flow */}
-                <div style={{height:"100%", position:"absolute", top:"0", left:"calc(50% - 0.25rem)", borderStyle:"solid", borderWidth:"0.25rem", borderColor:"#fff"}}></div>
-                <img src={Face} alt="Nikolay Panovski face" width="192" height="192" className="rounded-circle"
-                    style={{position:"absolute", top:"33%", left:"50%", transform:"translate(-96px,-96px)", borderStyle:"solid", borderWidth:"0.5rem", borderColor:"#fff"}} />
-                <h1 className="h1" style={{textAlign:"center", position:"absolute", width:"100%", top:"60%" }}>Nikolay Panovski</h1>
+                <div className="absolute h-full top-0 border-solid border-[0.25rem] border-yellow-50" style={{left:"calc(50% - 0.375rem)"}}></div>
+                <img src={Face} alt="Nikolay Panovski face" width="192" height="192"
+                    className="rounded-full absolute top-[33%] left-1/2 border-solid border-[0.25rem] border-yellow-50"
+                    style={{transform:"translate(-96px,-96px)"}} />
+                <h1 className="text-4xl text-center absolute w-full top-[60%]">Nikolay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Panovski</h1>
 
                 <div style={{position:"relative", width:"50%", height:"100%"}}>
                     {/*img x 4, grid */}
-                    <p className="h3 pl-8" style={{textAlign:"left", position:"absolute", width:"100%", top:"80%" }}>Interactive experiences</p>
+                    <h3 className="text-3xl pl-8 text-left absolute w-full top-[80%]">Interactive experiences</h3>
                 </div>
             </div>
 

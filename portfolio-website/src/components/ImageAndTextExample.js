@@ -9,7 +9,7 @@ function ImageAndTextExample() {
   return (
     <>
       {/*Card*/}
-      <div className='flex flex-row my-4 mx-[15%]'>
+      <div className='card-border flex flex-row my-4 mx-[15%]'>
         {/*Col*/}
         <div className='basis-1/3'>
           <div className='w-full h-full bg-center bg-cover' style={{backgroundImage:"url(/logo512.png)"}}></div>
@@ -17,9 +17,9 @@ function ImageAndTextExample() {
         {/*Col*/}
         <div className='basis-2/3'>
           {/*CardBody*/}
-          <div className='flex flex-column py-2 px-4'>
+          <div className='flex flex-col py-2 px-4'>
             {/*CardTitle*/}
-            <h3 className=''>IMT&S Unity Prototype</h3>
+            <h3 className='text-2xl font-bold'>IMT&S Unity Prototype</h3>
 
             <ProjectProperty icon={<UnityLogo width="36px" height="36px"/>} describerText="Duration" propertyValue="2 weeks"/>
             <ProjectProperty icon={<UnityLogo width="36px" height="36px"/>} propertyValue="Individual"/>
