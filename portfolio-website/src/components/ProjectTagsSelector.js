@@ -1,11 +1,8 @@
-import { useContext } from "react";
-import TagSelectorContext from "./TagSelectorContext";
 
 import ProjectTag from "./ProjectTag";
 
 
 function ProjectTagsSelector() {
-    const { setSelectedTags } = useContext(TagSelectorContext);
 
     const usedTags = [
         "Unity",
