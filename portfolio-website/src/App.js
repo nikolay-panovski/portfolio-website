@@ -13,14 +13,6 @@ import TagSelectorContext from 'components/TagSelectorContext';
 
 import ListOfProjectCards from 'components/ListOfProjectCards';
 
-import { ReactComponent as UnityLogo } from "icons/icons8-unity.svg";
-import { ReactComponent as CSLogo } from "icons/Logo_C_sharp.svg";
-import { ReactComponent as JSLogo } from "icons/icons8-javascript.svg";
-import { ReactComponent as LuaLogo } from "icons/Logo_Lua.svg";
-import { ReactComponent as CPPLogo } from "icons/icons8-c++.svg"
-import MQTTLogo from "icons/mqtt.png";
-import ProcessingLogo from "icons/processing-1024.png";
-
 import DurationLogo from "icons/icons8-time-100-dark.png";
 import TeamLogo from "icons/icons8-team-100-dark.png";
 import ClientLogo from "icons/icons8-client-64-dark.png";
