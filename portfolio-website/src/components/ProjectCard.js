@@ -1,5 +1,5 @@
 
-function ProjectCard( { coverUrl, CardBodyComponents } ) {
+function ProjectCard( { name, coverUrl, CardBodyComponents } ) {
   return (
     <>
       {/*Card*/}

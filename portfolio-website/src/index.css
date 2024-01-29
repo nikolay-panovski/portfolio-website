@@ -51,6 +51,22 @@ header h3 {
 }
 
 @layer components {
+  .btn-bordered {
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px black;
+  }
+
+  .btn-bordered-text {
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+  }
+
+  
+
   .expand-container {
     position: relative;
   }
@@ -59,11 +75,6 @@ header h3 {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    vertical-align: middle;
-    text-decoration: none;
-    background-color: transparent;
-    color: #fff;
-    border: solid 2px black;
     -webkit-transition: width 0.25s;
     transition: width 0.25s;
   }
@@ -73,9 +84,6 @@ header h3 {
     display: inline-block;
     -webkit-transition: max-width 1s;
     transition: max-width 1s;
-    white-space: nowrap;
-    overflow: hidden;
-    color: black;
   }
   
   .expand-btn:hover .expand-btn-text {

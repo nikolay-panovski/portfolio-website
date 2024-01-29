@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import HeaderGraphic from 'components/HeaderGraphic';
 import './App.css';
 
@@ -6,6 +8,10 @@ import ProjectCardTitle from 'components/ProjectCardTitle';
 import ProjectCardText from 'components/ProjectCardText';
 import ProjectProperty from 'components/ProjectProperty';
 import ProjectPropertyExpandable from 'components/ProjectPropertyExpandable';
+import ProjectTagsSelector from 'components/ProjectTagsSelector';
+import TagSelectorContext from 'components/TagSelectorContext';
+
+import ListOfProjectCards from 'components/ListOfProjectCards';
 
 import { ReactComponent as UnityLogo } from "icons/icons8-unity.svg";
 import { ReactComponent as CSLogo } from "icons/Logo_C_sharp.svg";
@@ -20,6 +26,50 @@ import TeamLogo from "icons/icons8-team-100-dark.png";
 import ClientLogo from "icons/icons8-client-64-dark.png";
 
 function App() {
+  const [selectedTags, setSelectedTags] = useState([]);
+  const [selectedCardsList, setSelectedCardsList] = useState([]);
+
+  useEffect( () => {
+    if (selectedTags.length === 0) {
+      setSelectedCardsList(MapListInfoToCards(ListOfProjectCards));
+    }
+    
+    else {
+      let ListOfSelectedCards = [];
+
+      for (let i = 0; i < ListOfProjectCards.length; i++) {
+        if (selectedTags.some(tag => ListOfProjectCards[i].tags.includes(tag) ) ) {
+          ListOfSelectedCards.push(ListOfProjectCards[i]);
+        }
+      }
+
+      setSelectedCardsList(MapListInfoToCards(ListOfSelectedCards));
+    }
+    
+  }, [selectedTags] );
+
+  function MapListInfoToCards(ListArray) {
+    return ListArray.map( 
+      (card) => <ProjectCard 
+        key={card.name}
+        name={card.name}
+        coverUrl={card.coverUrl}
+        CardBodyComponents={<>
+          <ProjectCardTitle text={card.name} />
+
+          {/* !! also add location property?? */}
+          <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText={card.durationDescriber} propertyValue={card.durationProperty}/>
+          <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} describerText={card.teamDescriber} propertyValue={card.teamProperty}/>
+          <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText={card.clientDescriber} propertyValue={card.clientProperty}/>
+          <div className="flex flex-row flex-wrap justify-start">
+            {card.expandableIcons.map(eIcon => <ProjectPropertyExpandable key={eIcon.propertyValue} icon={eIcon.icon} propertyValue={eIcon.propertyValue}/>)}
+          </div>
+
+          <ProjectCardText text={card.cardText}/>
+        </>}
+      />);
+  }
+
   return (
     <>
       {/* Icons by icons8.com */}
@@ -29,177 +79,14 @@ function App() {
         </header>
         <main>
 
-          <ProjectCard 
-            coverUrl={"/images/Unity_Prototype_Overview.png"}
-            CardBodyComponents={<>
-              <ProjectCardTitle text="IMT&S Unity Prototype" />
+          <TagSelectorContext.Provider value={{selectedTags, setSelectedTags}}>
+            <h2 className='text-center font-bold mx-auto my-8 text-3xl'>Projects</h2>
+            <p className='text-center mx-auto my-6 text-lg'>Click on the following tags to filter the projects below:</p>
+              <ProjectTagsSelector />
+            <hr />
 
-              {/* !! also add location property?? */}
-              <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText="Duration" propertyValue="2 weeks"/>
-              <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue="Individual"/>
-              <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText="Client" propertyValue="ACuTe for Nova Gorica"/>
-              <div className="flex flex-row flex-wrap justify-start">
-                <ProjectPropertyExpandable icon={<UnityLogo width="30px" height="30px"/>} propertyValue="Unity"/>
-                <ProjectPropertyExpandable icon={<CSLogo width="30px" height="30px"/>} propertyValue="C#"/>
-              </div>
-
-              <ProjectCardText text="Concept prototype under fast development for several minigames with real-world elements."/>
-            </>}
-          />
-
-          <ProjectCard 
-            coverUrl={"/images/ScrMult_Cover.png"}
-            CardBodyComponents={<>
-              <ProjectCardTitle text="IMT&S Phone-controllable screens" />
-
-              <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText="Duration" propertyValue="2 weeks"/>
-              <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue="Individual"/>
-              <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText="Client" propertyValue="ACuTe for Nova Gorica"/>
-              <div className="flex flex-row flex-wrap justify-start">
-                <ProjectPropertyExpandable icon={<img src={MQTTLogo} alt="MQTT logo" width="30px" height="30px" />} propertyValue="MQTT"/>
-                <ProjectPropertyExpandable icon={<JSLogo width="30px" height="30px"/>} propertyValue="JavaScript"/>
-              </div>
-
-              <ProjectCardText text="Concept prototype under fast development for several minigames with real-world elements."/>
-            </>}
-          />
-
-          <ProjectCard 
-            coverUrl={"/images/"}
-            CardBodyComponents={<>
-              <ProjectCardTitle text="Web Development Projects" />
-
-              <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} propertyValue="Various"/>
-              <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue="Individual"/>
-              <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} propertyValue="Personal/School assignments"/>
-              <div className="flex flex-row flex-wrap justify-start">
-                <ProjectPropertyExpandable icon={<UnityLogo width="30px" height="30px"/>} propertyValue="Unity"/>
-                <ProjectPropertyExpandable icon={<CSLogo width="30px" height="30px"/>} propertyValue="C#"/>
-              </div>
-
-              <ProjectCardText text="A collection of smaller projects where I learned various Web functionalities."/>
-            </>}
-          />
-
-          <ProjectCard 
-            coverUrl={"/images/"}
-            CardBodyComponents={<>
-              <ProjectCardTitle text="RFID Interactive Video Experience" />
-
-              <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText="Duration" propertyValue="2 weeks"/>
-              <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue="Individual"/>
-              <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText="Client" propertyValue="ACuTe for Nova Gorica"/>
-              <div className="flex flex-row flex-wrap justify-start">
-                <ProjectPropertyExpandable icon={<UnityLogo width="30px" height="30px"/>} propertyValue="Unity"/>
-                <ProjectPropertyExpandable icon={<CSLogo width="30px" height="30px"/>} propertyValue="C#"/>
-              </div>
-
-              <ProjectCardText text="Concept prototype under fast development for several minigames with real-world elements."/>
-            </>}
-          />
-
-          <ProjectCard 
-            coverUrl={"/images/"}
-            CardBodyComponents={<>
-              <ProjectCardTitle text="Deuvels tikken game" />
-
-              <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText="Duration" propertyValue="2 weeks"/>
-              <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue="Individual"/>
-              <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText="Client" propertyValue="ACuTe for Nova Gorica"/>
-              <div className="flex flex-row flex-wrap justify-start">
-                <ProjectPropertyExpandable icon={<UnityLogo width="30px" height="30px"/>} propertyValue="Unity"/>
-                <ProjectPropertyExpandable icon={<CSLogo width="30px" height="30px"/>} propertyValue="C#"/>
-              </div>
-
-              <ProjectCardText text="Concept prototype under fast development for several minigames with real-world elements."/>
-            </>}
-          />
-
-          <ProjectCard 
-            coverUrl={"/images/"}
-            CardBodyComponents={<>
-              <ProjectCardTitle text="Practical Research: Game Juice" />
-
-              <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText="Duration" propertyValue="2 weeks"/>
-              <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue="Individual"/>
-              <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText="Client" propertyValue="ACuTe for Nova Gorica"/>
-              <div className="flex flex-row flex-wrap justify-start">
-                <ProjectPropertyExpandable icon={<UnityLogo width="30px" height="30px"/>} propertyValue="Unity"/>
-                <ProjectPropertyExpandable icon={<CSLogo width="30px" height="30px"/>} propertyValue="C#"/>
-              </div>
-
-              <ProjectCardText text="Concept prototype under fast development for several minigames with real-world elements."/>
-            </>}
-          />
-
-          <ProjectCard 
-            coverUrl={"/images/"}
-            CardBodyComponents={<>
-              <ProjectCardTitle text="Desk Research: Game Juice" />
-
-              <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText="Duration" propertyValue="2 weeks"/>
-              <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue="Individual"/>
-              <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText="Client" propertyValue="ACuTe for Nova Gorica"/>
-              <div className="flex flex-row flex-wrap justify-start">
-                <ProjectPropertyExpandable icon={<UnityLogo width="30px" height="30px"/>} propertyValue="Unity"/>
-                <ProjectPropertyExpandable icon={<CSLogo width="30px" height="30px"/>} propertyValue="C#"/>
-              </div>
-
-              <ProjectCardText text="Concept prototype under fast development for several minigames with real-world elements."/>
-            </>}
-          />
-
-          <ProjectCard 
-            coverUrl={"/images/"}
-            CardBodyComponents={<>
-              <ProjectCardTitle text="Furfare" />
-
-              <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText="Duration" propertyValue="2 weeks"/>
-              <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue="Individual"/>
-              <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText="Client" propertyValue="ACuTe for Nova Gorica"/>
-              <div className="flex flex-row flex-wrap justify-start">
-                <ProjectPropertyExpandable icon={<UnityLogo width="30px" height="30px"/>} propertyValue="Unity"/>
-                <ProjectPropertyExpandable icon={<CSLogo width="30px" height="30px"/>} propertyValue="C#"/>
-              </div>
-
-              <ProjectCardText text={"Multiplayer party game summarizable as \"Bomberman Dodgeball\"."}/>
-            </>}
-          />
-
-          <ProjectCard 
-            coverUrl={"/images/"}
-            CardBodyComponents={<>
-              <ProjectCardTitle text="Tower defense prototype" />
-
-              <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText="Duration" propertyValue="2 weeks"/>
-              <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue="Individual"/>
-              <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText="Client" propertyValue="ACuTe for Nova Gorica"/>
-              <div className="flex flex-row flex-wrap justify-start">
-                <ProjectPropertyExpandable icon={<UnityLogo width="30px" height="30px"/>} propertyValue="Unity"/>
-                <ProjectPropertyExpandable icon={<CSLogo width="30px" height="30px"/>} propertyValue="C#"/>
-              </div>
-
-              <ProjectCardText text="Concept prototype under fast development for several minigames with real-world elements."/>
-            </>}
-          />
-
-          <ProjectCard 
-            coverUrl={"/images/TTT_embed_flow_Cover.png"}
-            CardBodyComponents={<>
-              <ProjectCardTitle text="Research: Embedding languages for game modding" />
-
-              <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText="Duration" propertyValue="2 weeks"/>
-              <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue="Individual"/>
-              <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} propertyValue="Personal/School assignment"/>
-              <div className="flex flex-row flex-wrap justify-start">
-                <ProjectPropertyExpandable icon={<LuaLogo width="30px" height="30px"/>} propertyValue="Lua"/>
-                <ProjectPropertyExpandable icon={<JSLogo width="30px" height="30px"/>} propertyValue="JavaScript"/>
-                <ProjectPropertyExpandable icon={<CPPLogo width="30px" height="30px"/>} propertyValue="C++"/>
-              </div>
-
-              <ProjectCardText text="Embedded Lua and JavaScript in C++ to measure their performance in simple operations, justified with the popularity of game modding and scripting."/>
-            </>}
-          />
+            {selectedCardsList}
+          </TagSelectorContext.Provider>
 
         </main>
       </div>
