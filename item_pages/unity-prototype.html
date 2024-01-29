@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="description" content="Portfolio Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- <link rel="icon" href="site_images/492686.png"> -->
+        <title>Nikolay Panovski</title>
+    </head>
+
+    <body>
+        <header>
+            <section class="headerWrap">
+                <div >
+                    <p class="titleName"><a href="../index.html">Nikolay Panovski</a></p>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index.html#aboutMeLink">About me</a></li>
+                        <li><a href="../index.html#portfolioLink">Portfolio</a></li>
+                        <li><a href="../index.html#contactMeLink">Contact me</a></li>
+                        <li><a href="https://www.linkedin.com/in/nikolay-panovski-043892201/"><img src="../site_images/icon_linkedin.png" alt="LinkedIn Logo"></a></li>
+                        <li><a href="https://github.com/nikolay-panovski"><img src="../site_images/icon_github.png" alt="GitHub Logo"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC4fmr8aSS2vq-0q2dxY6TRQ"><img src="../site_images/logo_yt.png" alt="YouTube Logo"></a></li>
+                    </ul>
+                </nav>
+            </section>
+
+        </header>
+
+        <main>
+            <section class="gamePresent">
+                <h5>IMT&S Unity Gameplay concept prototype</h5>
+
+                <section class="gamePageButtons">
+                    <button type="button">
+                        <a href="https://github.com/nikolay-panovski/citygame_ScrMult">GitHub source</a>
+                    </button>
+                </section>
+
+                <p>Play a Web build of the prototype here! (Please play in fullscreen.)</p>
+
+                <div id="unity-container" class="unity-desktop">
+                    <canvas id="unity-canvas" width=960 height=540></canvas>
+                    <div id="unity-loading-bar">
+                      <div id="unity-logo"></div>
+                      <div id="unity-progress-bar-empty">
+                        <div id="unity-progress-bar-full"></div>
+                      </div>
+                    </div>
+                    <div id="unity-warning"> </div>
+                    <div id="unity-footer">
+                      <div id="unity-webgl-logo"></div>
+                      <div id="unity-fullscreen-button"></div>
+                      <div id="unity-build-title">CityGames</div>
+                    </div>
+                  </div>
+
+                <section class="portfolio">
+                    <h6>Overview</h6>
+                    <section class="gameOverview">
+                        
+                        <section class="gameOverviewText">
+                            <p>This concept prototype was made to test multiple ideated games as part of 
+                                <a href="https://www.europeantheatre.eu/news/acute-open-call">the ACuTe project for Nova Gorica</a> 
+                                that were made by our team.
+                                <br>
+                                Presented are "TV static screen", "Memory puzzle with screens", "Morse code blinker", and "Puzzle pieces compound puzzle". 
+                                This multifaceted prototype was an extended exercise for me in fast prototype making, forcing me to create a minimal product 
+                                with consideration only of time (to be able to test and continue with the project), rather than code quality.
+                                <br>
+                                List of used assets:
+                            </p>
+                            <ul>
+                                <li><a href="https://assetstore.unity.com/packages/essentials/starterassets-firstperson-updates-in-new-charactercontroller-pac-196525">First Person Starter Assets</a> by Unity Technologies (including Character controller scripts; all other scripts in this project are mine.)</li>
+                                <li><a href="https://assetstore.unity.com/packages/3d/environments/interior-house-assets-urp-257122">URP Interior House Assets</a> by Unity Technologies</li>
+                                <li><a href="https://assetstore.unity.com/packages/3d/environments/apartment-kit-124055">Apartment Kit</a> by Brick Project Studio</li>
+                                <li><a href="https://assetstore.unity.com/packages/3d/environments/urban/city-package-107224">CITY package</a> by 255 pixel studios</li>
+                                <li><a href="https://assetstore.unity.com/packages/3d/environments/historic/polylised-medieval-desert-city-94557">Polylised - Medieval Desert City</a> by Ink Phantom</li>
+                                <li><a href="https://assetstore.unity.com/packages/3d/environments/urban/cubexcube-free-city-pack-i-199815">CubexCube - FREE City Pack I</a> by Cube x Cube</li>
+                                <li><a href="https://sketchfab.com/3d-models/old-tv-7cef86bade2b447d841c333bcab9287c">Old TV</a> by <a href="https://sketchfab.com/shadowowy">shadowowy</a></li>
+                            </ul>
+                            <br>
+                                <br>
+                                For more detailed information on this prototype and the creation process, please <a href="https://acutecity.wordpress.com/2023/12/05/week-11-12-concept-prototyping-in-unity/">read this blog post</a>.
+                                <br>
+                                For elaboration on testing results from this prototype, please <a href="https://acutecity.wordpress.com/2023/12/07/week-13-user-testing-unity-prototype-app-ui-mockup/">read this blog post</a>.
+                        </section>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <section class="gameContactMe">
+                <h6 id="gameContactMeLink">Contact me</h6>
+
+                <section class="gameContactMeWrapper">
+                    <ul class="gameFooterList">
+                        <li><a href="https://www.linkedin.com/in/nikolay-panovski-043892201/"><img src="../site_images/icon_linkedin.png" alt="LinkedIn Logo"></a></li>
+                        <li><a href="https://github.com/nikolay-panovski"><img src="../site_images/icon_github.png" alt="GitHub Logo"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC4fmr8aSS2vq-0q2dxY6TRQ"><img src="../site_images/logo_yt.png" alt="YouTube Logo"></a></li>
+                    </ul>
+
+                    <p class="gameEmail">Email: nikipanovski@gmail.com</p>  
+                    <br> <!-- REMOVE -->
+                </section>
+            </section>
+
+        </footer>
+    </body>
+
+
+    <script>
+        var container = document.querySelector("#unity-container");
+        var canvas = document.querySelector("#unity-canvas");
+        var loadingBar = document.querySelector("#unity-loading-bar");
+        var progressBarFull = document.querySelector("#unity-progress-bar-full");
+        var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+        var warningBanner = document.querySelector("#unity-warning");
+  
+        // Shows a temporary message banner/ribbon for a few seconds, or
+        // a permanent error message on top of the canvas if type=='error'.
+        // If type=='warning', a yellow highlight color is used.
+        // Modify or remove this function to customize the visually presented
+        // way that non-critical warnings and error messages are presented to the
+        // user.
+        function unityShowBanner(msg, type) {
+          function updateBannerVisibility() {
+            warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+          }
+          var div = document.createElement('div');
+          div.innerHTML = msg;
+          warningBanner.appendChild(div);
+          if (type == 'error') div.style = 'background: red; padding: 10px;';
+          else {
+            if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+            setTimeout(function() {
+              warningBanner.removeChild(div);
+              updateBannerVisibility();
+            }, 5000);
+          }
+          updateBannerVisibility();
+        }
+  
+        var buildUrl = "Build";
+        var loaderUrl = buildUrl + "/Build.loader.js";
+        var config = {
+          dataUrl: buildUrl + "/Build.data.unityweb",
+          frameworkUrl: buildUrl + "/Build.framework.js.unityweb",
+          codeUrl: buildUrl + "/Build.wasm.unityweb",
+          streamingAssetsUrl: "StreamingAssets",
+          companyName: "ACuTe_Saxion",
+          productName: "CityGames",
+          productVersion: "0.1.2",
+          showBanner: unityShowBanner,
+        };
+  
+        // By default Unity keeps WebGL canvas render target size matched with
+        // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+        // Set this to false if you want to decouple this synchronization from
+        // happening inside the engine, and you would instead like to size up
+        // the canvas DOM size and WebGL render target sizes yourself.
+        // config.matchWebGLToCanvasSize = false;
+  
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+          // Mobile device style: fill the whole browser client area with the game canvas:
+  
+          var meta = document.createElement('meta');
+          meta.name = 'viewport';
+          meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+          document.getElementsByTagName('head')[0].appendChild(meta);
+          container.className = "unity-mobile";
+          canvas.className = "unity-mobile";
+  
+          // To lower canvas resolution on mobile devices to gain some
+          // performance, uncomment the following line:
+          // config.devicePixelRatio = 1;
+  
+          unityShowBanner('WARNING! This prototype does NOT have mobile controls. It is intended to be played on DESKTOP.');
+        } else {
+          // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+  
+          canvas.style.width = "100%";
+          canvas.style.height = "100%";
+        }
+  
+        loadingBar.style.display = "block";
+  
+        var script = document.createElement("script");
+        script.src = loaderUrl;
+        script.onload = () => {
+          createUnityInstance(canvas, config, (progress) => {
+            progressBarFull.style.width = 100 * progress + "%";
+          }).then((unityInstance) => {
+            loadingBar.style.display = "none";
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };
+          }).catch((message) => {
+            alert(message);
+          });
+        };
+        document.body.appendChild(script);
+      </script>
+</html>
