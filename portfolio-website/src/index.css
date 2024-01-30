@@ -48,6 +48,10 @@ header h3 {
   .card-mx {
     @apply mx-[15%]
   }
+
+  .card-research-bg-color {
+    @apply bg-orange-100
+  }
 }
 
 @layer components {

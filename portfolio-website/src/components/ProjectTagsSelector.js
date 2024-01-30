@@ -10,7 +10,7 @@ function ProjectTagsSelector() {
         "Device Communication",
         "Games",
         "Installations",
-        "Projects",
+        "Practical",
         "Research",
 
     ];

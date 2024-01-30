@@ -1,22 +1,27 @@
 import { ReactComponent as UnityLogo } from "icons/icons8-unity.svg";
 import { ReactComponent as CSLogo } from "icons/Logo_C_sharp.svg";
-import { ReactComponent as JSLogo } from "icons/icons8-javascript.svg";
+import { ReactComponent as JSLogo } from "icons/worldvectorlogo-javascript.svg";
 import { ReactComponent as LuaLogo } from "icons/Logo_Lua.svg";
-import { ReactComponent as CPPLogo } from "icons/icons8-c++.svg"
+import { ReactComponent as CPPLogo } from "icons/icons8-c++.svg";
+import { ReactComponent as MongoDBLogo } from "icons/icons8-mongodb.svg";
+import { ReactComponent as ReactLogo } from "icons/Logo_React.svg";
 import MQTTLogo from "icons/mqtt.png";
+import VueLogo from "icons/icons8-vue.png";
 import ProcessingLogo from "icons/processing-1024.png";
+import WebLogo from "icons/weblogos.png";
+import ASPLogo from "icons/aspnet.png";
 
 const ListOfProjectCards = [
     {
         name: "IMT&S Unity Prototype",
         coverUrl: "/images/Unity_Prototype_Overview.png",
-        tags: ["Unity", "Projects"],
+        tags: ["Unity", "Practical"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
         teamProperty: "Individual",
         clientDescriber: "Client",
-        clientProperty: "ACuTe for Nova Gorica",
+        clientProperty: "ACuTe for Nova Gorica (Slovenia)",
         expandableIcons: [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
@@ -26,45 +31,49 @@ const ListOfProjectCards = [
     {
         name: "IMT&S Phone-controllable screens",
         coverUrl: "/images/ScrMult_Cover.png",
-        tags: ["Unity", "Projects"],
+        tags: ["JavaScript", "Practical", "Device Communication", "Installations"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
         teamProperty: "Individual",
         clientDescriber: "Client",
-        clientProperty: "ACuTe for Nova Gorica",
+        clientProperty: "ACuTe for Nova Gorica (Slovenia)",
         expandableIcons: [
             { icon: <img src={MQTTLogo} alt="MQTT logo" width="30px" height="30px" />, propertyValue: "MQTT"}, 
             { icon: <JSLogo width="30px" height="30px"/>, propertyValue: "JavaScript"}, 
+            { icon: <ReactLogo width="30px" height="30px"/>, propertyValue: "React"}, 
         ],
         cardText: `Concept prototype under fast development for several minigames with real-world elements.`
     },
     {
         name: "Web Development Projects",
-        coverUrl: "/images/Unity_Prototype_Overview.png",
-        tags: ["Unity", "Projects"],
+        coverUrl: "/images/EASV_WebDev_Cover.png",
+        tags: ["JavaScript", "Practical"],
         durationDescriber: "",
         durationProperty: "Various",
         teamDescriber: "",
         teamProperty: "Individual",
-        clientDescriber: "",
-        clientProperty: "Personal/School assignments",
+        clientDescriber: "Minor",
+        clientProperty: "Web Development (EASV, Denmark)",
         expandableIcons: [
-            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+            { icon: <img src={WebLogo} alt="HTML+CSS+JS logo" width="30px" height="30px" />, propertyValue: "Web"}, 
+            { icon: <img src={VueLogo} alt="Vue logo" width="30px" height="30px" />, propertyValue: "Vue"}, 
+            { icon: <img src={ASPLogo} alt="ASP.NET MVC logo" width="30px" height="30px" />, propertyValue: "ASP.NET"}, 
+            { icon: <MongoDBLogo width="30px" height="30px"/>, propertyValue: "MongoDB"}, 
         ],
-        cardText: `A collection of smaller projects where I learned various Web functionalities.`
+        cardText: `A collection of smaller projects where I learned about various Web aspects - frontend, backend, CI/CD, frameworks.
+            Integral to building my portfolio site!`
     },
     {
         name: "RFID Interactive Video Experience",
-        coverUrl: "/images/Unity_Prototype_Overview.png",
-        tags: ["Unity", "Projects"],
+        coverUrl: "/images/100FAT_Palthe_Cover.png",
+        tags: ["Unity", "Practical", "Device Communication", "Installations"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
         teamProperty: "Individual",
         clientDescriber: "Client",
-        clientProperty: "ACuTe for Nova Gorica",
+        clientProperty: "Museum \"Het Palthe Huis\"",
         expandableIcons: [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
@@ -73,14 +82,14 @@ const ListOfProjectCards = [
     },
     {
         name: "Deuvels tikken game",
-        coverUrl: "/images/Unity_Prototype_Overview.png",
-        tags: ["Unity", "Projects"],
+        coverUrl: "/images/100FAT_Deuvels_IRL.png",
+        tags: ["Unity", "Practical", "Device Communication", "Installations"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
         teamProperty: "Individual",
         clientDescriber: "Client",
-        clientProperty: "ACuTe for Nova Gorica",
+        clientProperty: "Regionale Stichting Enterse Zomp",
         expandableIcons: [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
@@ -89,46 +98,45 @@ const ListOfProjectCards = [
     },
     {
         name: "Practical Research: Game Juice",
-        coverUrl: "/images/Unity_Prototype_Overview.png",
-        tags: ["Unity", "Projects"],
+        coverUrl: "/images/gamejuiceoverview.jpg",
+        tags: ["Unity", "Games", "Practical", "Research"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
         teamProperty: "Individual",
-        clientDescriber: "Client",
-        clientProperty: "ACuTe for Nova Gorica",
+        clientDescriber: "",
+        clientProperty: "Personal/School assignment",
         expandableIcons: [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+            { icon: <img src={ProcessingLogo} alt="Processing engine logo" width="30px" height="30px" />, propertyValue: "Processing (Java)"}, 
         ],
         cardText: `Concept prototype under fast development for several minigames with real-world elements.`
     },
     {
-        name: "Desk Research: Game Juice",
-        coverUrl: "/images/Unity_Prototype_Overview.png",
-        tags: ["Unity", "Projects"],
+        name: "Desk Research: Game Feel",
+        coverUrl: "/images/GameFeel_Poster_Cover.png",
+        tags: ["Games", "Research"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
         teamProperty: "Individual",
-        clientDescriber: "Client",
-        clientProperty: "ACuTe for Nova Gorica",
+        clientDescriber: "",
+        clientProperty: "Personal/School assignment",
         expandableIcons: [
-            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
         ],
         cardText: `Concept prototype under fast development for several minigames with real-world elements.`
     },
     {
         name: "Furfare",
-        coverUrl: "/images/Unity_Prototype_Overview.png",
-        tags: ["Unity", "Projects"],
+        coverUrl: "/images/furfare_main_menu_temp.png",
+        tags: ["Unity", "Games", "Practical"],
         durationDescriber: "Duration",
-        durationProperty: "2 weeks",
+        durationProperty: "8 weeks",
         teamDescriber: "",
         teamProperty: "Individual",
         clientDescriber: "Client",
-        clientProperty: "ACuTe for Nova Gorica",
+        clientProperty: "WIRWAR - Gaming Festival Twente",
         expandableIcons: [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
@@ -137,24 +145,24 @@ const ListOfProjectCards = [
     },
     {
         name: "Tower defense prototype",
-        coverUrl: "/images/Unity_Prototype_Overview.png",
-        tags: ["Unity", "Projects"],
+        coverUrl: "/images/SA_TD_Game.png",
+        tags: ["Unity", "Games", "Practical"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
         teamProperty: "Individual",
-        clientDescriber: "Client",
-        clientProperty: "ACuTe for Nova Gorica",
+        clientDescriber: "",
+        clientProperty: "Personal/School assignment",
         expandableIcons: [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
         ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
+        cardText: `A game created with OOP design patterns, making possible a variety of towers, shot effects, and enemies.`
     },
     {
         name: "Research: Embedding languages for game modding",
         coverUrl: "/images/TTT_embed_flow_Cover.png",
-        tags: ["Unity", "Projects"],
+        tags: ["Research"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",

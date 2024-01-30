@@ -42,7 +42,7 @@ function App() {
 
   function MapListInfoToCards(ListArray) {
     return ListArray.map( 
-      (card) => <ProjectCard 
+      (card) => <ProjectCard /*className={card.tags.includes("Research") ? "card-research-bg-color" : ""}*/
         key={card.name}
         name={card.name}
         coverUrl={card.coverUrl}
