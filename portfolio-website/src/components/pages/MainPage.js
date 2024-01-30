@@ -83,6 +83,8 @@ function MainPage() {
                 {selectedCardsList}
             </TagSelectorContext.Provider>
 
+            <hr />
+
             </main>
         </>
     );

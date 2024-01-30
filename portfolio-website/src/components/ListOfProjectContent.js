@@ -9,12 +9,14 @@ const ListOfProjectContent = [
         clientProperty: "",
         locationProperty: "",
         headerContent: [
-            <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: ``,
+        starterParagraphContent: [
+
+        ],
         mainParagraphContent: ``,
     },
     {
@@ -25,13 +27,17 @@ const ListOfProjectContent = [
         clientProperty: "ACuTe for Nova Gorica",
         locationProperty: "Enschede (NL)",
         headerContent: [
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NFvQ7CNCCdg?si=aTWd9YTA232Rq0mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NFvQ7CNCCdg?si=aTWd9YTA232Rq0mk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: ``,
-        mainParagraphContent: ``,
+        starterParagraphContent: [
+            "MQTT communication",
+            "placeholder: Toto communication",
+            "placeholder: Electron",
+        ],
+        mainParagraphContent: `https://www.lipsum.com/ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
     },
     {
         name: "Furfare",
@@ -46,7 +52,9 @@ const ListOfProjectContent = [
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: ``,
+        starterParagraphContent: [
+            
+        ],
         mainParagraphContent: ``,
     },
     {
@@ -62,7 +70,9 @@ const ListOfProjectContent = [
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: ``,
+        starterParagraphContent: [
+            
+        ],
         mainParagraphContent: ``,
     },
     {
@@ -78,7 +88,9 @@ const ListOfProjectContent = [
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: ``,
+        starterParagraphContent: [
+            
+        ],
         mainParagraphContent: ``,
     },
     {
@@ -94,7 +106,9 @@ const ListOfProjectContent = [
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: ``,
+        starterParagraphContent: [
+            
+        ],
         mainParagraphContent: ``,
     },
     {
@@ -110,7 +124,9 @@ const ListOfProjectContent = [
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: ``,
+        starterParagraphContent: [
+            
+        ],
         mainParagraphContent: ``,
     },
     {
@@ -126,7 +142,9 @@ const ListOfProjectContent = [
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: ``,
+        starterParagraphContent: [
+            
+        ],
         mainParagraphContent: ``,
     },
     {
@@ -142,7 +160,9 @@ const ListOfProjectContent = [
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: ``,
+        starterParagraphContent: [
+            
+        ],
         mainParagraphContent: ``,
     },
     {
@@ -158,7 +178,9 @@ const ListOfProjectContent = [
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: ``,
+        starterParagraphContent: [
+            
+        ],
         mainParagraphContent: ``,
     },
 
