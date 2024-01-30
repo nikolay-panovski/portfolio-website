@@ -7,6 +7,7 @@ function ProjectTagsSelector() {
     const usedTags = [
         "Unity",
         "JavaScript",
+        "UI",
         "Device Communication",
         "Games",
         "Installations",
@@ -24,7 +25,7 @@ function ProjectTagsSelector() {
 
     return (
         <>
-            <div className="flex flex-row flex-wrap w-2/3 mx-auto my-8">
+            <div className="flex flex-row flex-wrap justify-center w-2/3 mx-auto my-8">
                 {usedTagsJSX}
             </div>
         </>

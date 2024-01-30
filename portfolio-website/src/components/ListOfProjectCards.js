@@ -15,7 +15,7 @@ const ListOfProjectCards = [
     {
         name: "IMT&S Unity Prototype",
         coverUrl: "/images/Unity_Prototype_Overview.png",
-        tags: ["Unity", "Practical"],
+        tags: ["Unity", "Practical", "Games"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
@@ -42,6 +42,22 @@ const ListOfProjectCards = [
             { icon: <img src={MQTTLogo} alt="MQTT logo" width="30px" height="30px" />, propertyValue: "MQTT"}, 
             { icon: <JSLogo width="30px" height="30px"/>, propertyValue: "JavaScript"}, 
             { icon: <ReactLogo width="30px" height="30px"/>, propertyValue: "React"}, 
+        ],
+        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
+    },
+    {
+        name: "Furfare",
+        coverUrl: "/images/furfare_main_menu_temp.png",
+        tags: ["Unity", "UI", "Games", "Practical"],
+        durationDescriber: "Duration",
+        durationProperty: "8 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual",
+        clientDescriber: "Client",
+        clientProperty: "WIRWAR - Gaming Festival Twente",
+        expandableIcons: [
+            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
         ],
         cardText: `Concept prototype under fast development for several minigames with real-world elements.`
     },
@@ -83,7 +99,7 @@ const ListOfProjectCards = [
     {
         name: "Deuvels tikken game",
         coverUrl: "/images/100FAT_Deuvels_IRL.png",
-        tags: ["Unity", "Practical", "Device Communication", "Installations"],
+        tags: ["Unity", "Practical", "UI", "Device Communication", "Games", "Installations"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
@@ -99,7 +115,7 @@ const ListOfProjectCards = [
     {
         name: "Practical Research: Game Juice",
         coverUrl: "/images/gamejuiceoverview.jpg",
-        tags: ["Unity", "Games", "Practical", "Research"],
+        tags: ["Unity", "Games", "UI", "Practical", "Research"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
@@ -124,22 +140,6 @@ const ListOfProjectCards = [
         clientDescriber: "",
         clientProperty: "Personal/School assignment",
         expandableIcons: [
-        ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
-    },
-    {
-        name: "Furfare",
-        coverUrl: "/images/furfare_main_menu_temp.png",
-        tags: ["Unity", "Games", "Practical"],
-        durationDescriber: "Duration",
-        durationProperty: "8 weeks",
-        teamDescriber: "",
-        teamProperty: "Individual",
-        clientDescriber: "Client",
-        clientProperty: "WIRWAR - Gaming Festival Twente",
-        expandableIcons: [
-            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
         ],
         cardText: `Concept prototype under fast development for several minigames with real-world elements.`
     },
