@@ -4,6 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 
 import './App.css';
 import MainPage from 'components/pages/MainPage';
+import ProjectPage from 'components/pages/ProjectPage';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<MainPage />} />
-          {/*<Route path='item_pages/:name' element={<ProjectCard?? />} /> */}
+          <Route path='item_pages/:name' element={<ProjectPage />} />
         </Routes>
       </div>
 

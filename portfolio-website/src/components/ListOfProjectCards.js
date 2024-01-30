@@ -29,7 +29,7 @@ const ListOfProjectCards = [
         cardText: `Concept prototype under fast development for several minigames with real-world elements.`
     },
     {
-        name: "IMT&S Phone-controllable screens",
+        name: "IMT&S Phone-controllable screens experience",
         coverUrl: "/images/ScrMult_Cover.png",
         tags: ["JavaScript", "Practical", "Device Communication", "Installations"],
         durationDescriber: "Duration",

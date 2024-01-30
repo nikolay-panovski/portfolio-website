@@ -34,6 +34,10 @@ header h3 {
   font-family: 'Simply Rounded Bold', sans-serif;
 }
 
+.App-header {
+  background-color: #282c34;
+}
+
 /* Expanding button section - adapted from https://stackoverflow.com/a/60926904 */
 
 @layer components {

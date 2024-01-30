@@ -15,6 +15,7 @@ import ListOfProjectCards from 'components/ListOfProjectCards';
 import DurationLogo from "icons/icons8-time-100-dark.png";
 import TeamLogo from "icons/icons8-team-100-dark.png";
 import ClientLogo from "icons/icons8-client-64-dark.png";
+import { Link } from 'react-router-dom';
 
 function MainPage() {
     const [selectedTags, setSelectedTags] = useState([]);
@@ -41,24 +42,29 @@ function MainPage() {
   
     function MapListInfoToCards(ListArray) {
       return ListArray.map( 
-        (card) => <ProjectCard /*className={card.tags.includes("Research") ? "card-research-bg-color" : ""}*/
-          key={card.name}
-          name={card.name}
-          coverUrl={card.coverUrl}
-          CardBodyComponents={<>
-            <ProjectCardTitle text={card.name} />
-  
-            {/* !! also add location property?? */}
-            <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText={card.durationDescriber} propertyValue={card.durationProperty}/>
-            <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} describerText={card.teamDescriber} propertyValue={card.teamProperty}/>
-            <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText={card.clientDescriber} propertyValue={card.clientProperty}/>
-            <div className="flex flex-row flex-wrap justify-start">
-              {card.expandableIcons.map(eIcon => <ProjectPropertyExpandable key={eIcon.propertyValue} icon={eIcon.icon} propertyValue={eIcon.propertyValue}/>)}
-            </div>
-  
-            <ProjectCardText text={card.cardText}/>
-          </>}
-        />);
+        (card) => 
+        
+        <Link key={card.name} to={`/item_pages/${encodeURI(card.name)}`}>
+            <ProjectCard /*className={card.tags.includes("Research") ? "card-research-bg-color" : ""}*/
+            
+            name={card.name}
+            coverUrl={card.coverUrl}
+            CardBodyComponents={<>
+                <ProjectCardTitle text={card.name} />
+    
+                {/* !! also add location property?? */}
+                <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} describerText={card.durationDescriber} propertyValue={card.durationProperty}/>
+                <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} describerText={card.teamDescriber} propertyValue={card.teamProperty}/>
+                <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} describerText={card.clientDescriber} propertyValue={card.clientProperty}/>
+                <div className="flex flex-row flex-wrap justify-start">
+                {card.expandableIcons.map(eIcon => <ProjectPropertyExpandable key={eIcon.propertyValue} icon={eIcon.icon} propertyValue={eIcon.propertyValue}/>)}
+                </div>
+    
+                <ProjectCardText text={card.cardText}/>
+            </>}
+            />
+        </Link>
+        );
     }
 
     return (
