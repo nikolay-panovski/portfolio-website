@@ -113,6 +113,6 @@ ul {
   }
   
   .expand-btn:hover .expand-btn-text {
-    max-width: 500px;
+    max-width: 300px;
   }
 }
