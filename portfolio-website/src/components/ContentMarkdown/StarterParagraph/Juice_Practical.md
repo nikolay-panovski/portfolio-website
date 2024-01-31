@@ -1,0 +1,8 @@
+This project is a mix between research and implementation, with the latter part ending up harder than expected. As a result, what I can show is less than what I learned.
+
+&nbsp;
+
+- **Perspectives on game feel and juice**: Various research papers and industry opinions on the definitions of these terms and what aspects of games they express themselves in. I decided to follow up on this with desk research for an "**Applied Research**" module ([also on my portfolio](/item_pages/Desk%20Research:%20Game%20Feel)).
+- **Recurring "juicy" effects**: Some recognizable audiovisual tricks across multiple examples for boosting the appeal of a game. Screen shake, impact particles, and hit stop are common examples. I ended up finding a lot of good examples at the [Masahiro Sakurai on Creating Games]("https://www.youtube.com/@sora_sakurai_en") Youtube channel.
+- **(Basic) implementation of effects**: I added some enhancements to two games, boosting my knowledge of tweening, value tweaking, and the importance of low coupling. Due to deadlines however, one could say I "optimized for time rather than quality", making the perceived improvements small.
+- **Mindfulness of context**: After this project, I fully understand *why* not every game can receive a universal bundle of "juicy" effects and benefit from them. On top of that, some effects I added started disrupting gameplay a bit, or contributed visuals in places with enough visuals already. Going forward, my "research" should be focused on the concrete game and its players, and not on the applicable effects out there.

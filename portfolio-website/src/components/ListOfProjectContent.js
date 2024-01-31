@@ -2,6 +2,10 @@ import MD_IMTSUnity_Starter from "components/ContentMarkdown/StarterParagraph/IM
 import MD_IMTSUnity_Main from "components/ContentMarkdown/MainParagraph/IMTS_Unity.md";
 import MD_ScrMult_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_ScrMult.md";
 import MD_ScrMult_Main from "components/ContentMarkdown/MainParagraph/IMTS_ScrMult.md";
+import MD_JuiceP_Starter from "components/ContentMarkdown/StarterParagraph/Juice_Practical.md";
+import MD_JuiceP_Main from "components/ContentMarkdown/MainParagraph/Juice_Practical.md";
+import MD_JuiceD_Starter from "components/ContentMarkdown/StarterParagraph/Juice_Desk.md";
+import MD_JuiceD_Main from "components/ContentMarkdown/MainParagraph/Juice_Desk.md";
 import MD_TowerD_Starter from "components/ContentMarkdown/StarterParagraph/SA_TowerD.md";
 import MD_TowerD_Main from "components/ContentMarkdown/MainParagraph/SA_TowerD.md";
 import MD_TTT_Starter from "components/ContentMarkdown/StarterParagraph/TTT_Embed.md";
@@ -153,26 +157,38 @@ const ListOfProjectContent = [
     },
     {
         name: "Practical Research: Game Juice",
-        backgroundURL: "",
+        backgroundURL: "/images/gamejuiceoverview.jpg",
         durationProperty: "2 weeks",
         teamProperty: "Individual",
         clientProperty: "",
         locationProperty: "",
         headerContent: [
-            
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wjhzPwCQW28?si=K8n0ulXOrnbXRdpk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         ],
         headerButtons: [
-
+            <a href="https://github.com/nikolay-panovski/ProjectShowoff_Furfare/releases/tag/v1.2.0"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Download Furfare ("juicy")</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/ProjectShowoff_Furfare/tree/JuicePlaytestEdits"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See code changes (Furfare)</p>
+            </a>,
         ],
         mainGalleryContent: [
-
+            <a href="/docs/492686_Nikolay_Panovski_PP2_Reflection.pdf"><img src="/images/gallery/Juice_Practical/ReflectionReport.png" alt="Reflection report (document download)" /></a>,
+            <a href="/docs/Juice_EnhancementsShortList.pdf"><img src="/images/gallery/Juice_Practical/EnhancementsList.png" alt="'Juicy' additions (document download)" /></a>,
+            <a href="/images/gallery/Juice_Practical/Furfare_Juicy.png"><img src="/images/gallery/Juice_Practical/Furfare_Juicy.png" alt="'Juicy' additions to Furfare (game)" /></a>,
+            <a href="/images/gallery/Juice_Practical/Beans_Juicy.png"><img src="/images/gallery/Juice_Practical/Beans_Juicy.png" alt="'Juicy' additions to Beans' Adventure (game)" /></a>,
         ],
-        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
+        starterParagraphContent: await fetchMarkdownText(MD_JuiceP_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_JuiceP_Main),
     },
     {
         name: "Desk Research: Game Feel",
-        backgroundURL: "",
+        backgroundURL: "/images/GameFeel_Poster_Cover.png",
         durationProperty: "2 weeks",
         teamProperty: "Individual",
         clientProperty: "",
@@ -181,13 +197,23 @@ const ListOfProjectContent = [
             
         ],
         headerButtons: [
-
+            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Paper.pdf"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">View white paper</p>
+            </a>,
+            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Poster.pdf"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">View poster</p>
+            </a>,
         ],
         mainGalleryContent: [
-
+            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Paper.pdf"><img src="/images/gallery/Juice_Desk/Paper_Cover.png" alt="Game Feel White paper" /></a>,
+            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Poster.pdf"><img src="/images/GameFeel_Poster_Cover.png" alt="Game Feel Poster" /></a>,
         ],
-        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
+        starterParagraphContent: await fetchMarkdownText(MD_JuiceD_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_JuiceD_Main),
     },
     {
         name: "Tower defense prototype",
