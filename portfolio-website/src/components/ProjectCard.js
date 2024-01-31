@@ -3,10 +3,10 @@ function ProjectCard( { name, coverUrl, CardBodyComponents } ) {
   return (
     <>
       {/*Card*/}
-      <div className='card-border card-my card-mx flex flex-row'>
+      <div className='card-border card-my card-mx flex flex-col md:flex-row'>
         {/*Col*/}
         <div className='basis-1/3'>
-          <div className='w-full h-full bg-center bg-cover rounded-l-xl' style={{backgroundImage:"url(" + coverUrl + ")"}}></div>
+          <img className="h-64 w-full md:h-full object-cover rounded-lg" src={coverUrl} alt="Card cover image"></img>
         </div>
         {/*Col*/}
         <div className='basis-2/3'>
