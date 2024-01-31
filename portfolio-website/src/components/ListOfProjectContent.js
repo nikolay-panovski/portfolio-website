@@ -2,6 +2,8 @@ import MD_IMTSUnity_Starter from "components/ContentMarkdown/StarterParagraph/IM
 import MD_IMTSUnity_Main from "components/ContentMarkdown/MainParagraph/IMTS_Unity.md";
 import MD_ScrMult_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_ScrMult.md";
 import MD_ScrMult_Main from "components/ContentMarkdown/MainParagraph/IMTS_ScrMult.md";
+import MD_TowerD_Starter from "components/ContentMarkdown/StarterParagraph/SA_TowerD.md";
+import MD_TowerD_Main from "components/ContentMarkdown/MainParagraph/SA_TowerD.md";
 import MD_TTT_Starter from "components/ContentMarkdown/StarterParagraph/TTT_Embed.md";
 import MD_TTT_Main from "components/ContentMarkdown/MainParagraph/TTT_Embed.md";
 
@@ -37,7 +39,15 @@ const ListOfProjectContent = [
             </a>,
         ],
         mainGalleryContent: [
-
+            <img src="/images/gallery/IMTS_Unity/Code_Tween.png" alt="City games Unity prototype" />,
+            <img src="/images/gallery/IMTS_Unity/Code_MorseBlinker1.png" alt="City games Unity prototype" />,
+            <img src="/images/gallery/IMTS_Unity/Code_MorseBlinker2.png" alt="City games Unity prototype" />,
+            <img src="/images/gallery/IMTS_Unity/Unity_UIInput.png" alt="City games Unity prototype" />,
+            <img src="/images/gallery/IMTS_Unity/TV_Static.png" alt="City games Unity prototype" />,
+            <img src="/images/gallery/IMTS_Unity/ScrMult.png" alt="City games Unity prototype" />,
+            <img src="/images/gallery/IMTS_Unity/MorseCode.png" alt="City games Unity prototype" />,
+            <img src="/images/gallery/IMTS_Unity/PP_River.png" alt="City games Unity prototype" />,
+            <img src="/images/gallery/IMTS_Unity/PP_Square.png" alt="City games Unity prototype" />,
         ],
         starterParagraphContent: await fetchMarkdownText(MD_IMTSUnity_Starter),
         mainParagraphContent: await fetchMarkdownText(MD_IMTSUnity_Main),
@@ -181,22 +191,23 @@ const ListOfProjectContent = [
     },
     {
         name: "Tower defense prototype",
-        backgroundURL: "",
+        backgroundURL: "/images/gallery/SA_TowerDefense/BuildPhase.png",
         durationProperty: "5 weeks",
         teamProperty: "Individual",
         clientProperty: "",
         locationProperty: "Enschede (Netherlands)",
         headerContent: [
-            
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/relt5flWIDo?si=slNYJiU5it1mC0_T" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         ],
         headerButtons: [
 
         ],
         mainGalleryContent: [
-
+            <img src="/images/gallery/SA_TowerDefense/BuildPhase.png" alt="Tower defense game with design patterns" />,
+            <img src="/images/gallery/SA_TowerDefense/GameOver.png" alt="Tower defense game with design patterns" />,
         ],
-        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
+        starterParagraphContent: await fetchMarkdownText(MD_TowerD_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_TowerD_Main),
     },
     {
         name: "Research: Embedding languages for game modding",
