@@ -38,9 +38,20 @@ header h3 {
   background-color: #282c34;
 }
 
-ul {
+/* Markdown section - directly and explicitly override Tailwind for parsed .md elements not controllable with the classes */
+
+.markdown ul {
   list-style-type: disc;
 }
+
+.markdown a {
+  text-decoration: underline;
+}
+
+.markdown a:hover {
+  text-decoration: none;
+}
+
 
 /* Expanding button section - adapted from https://stackoverflow.com/a/60926904 */
 
