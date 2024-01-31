@@ -44,7 +44,7 @@ function MainPage() {
       return ListArray.map( 
         (card) => 
         
-        <Link key={card.name} to={`/item_pages/${encodeURI(card.name)}`}>
+        <Link key={card.name} to={`/item_pages/${encodeURI(card.name)}`} reloadDocument> {/* preventScrollReset={false} */}
             <ProjectCard /*className={card.tags.includes("Research") ? "card-research-bg-color" : ""}*/
             
             name={card.name}
