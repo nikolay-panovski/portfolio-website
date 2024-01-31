@@ -106,6 +106,15 @@ header h3 {
     color: white;
   }
 
+  .header-btn {
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    border: solid 0.75rem #4e8ab9;
+    border-radius: 1rem;
+  }
+
   
 
   .expand-container {

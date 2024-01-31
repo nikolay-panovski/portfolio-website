@@ -27,6 +27,10 @@ function ProjectPage( { } ) {
                     {content.headerContent}
                 </div>
 
+                <div className='flex flex-row flex-wrap justify-evenly w-full py-2 px-4'>
+                    {content.headerButtons}
+                </div>
+
                 <div className='flex flex-row flex-wrap py-2 px-4' > {/* self-start */}
                     {content.durationProperty ? <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} propertyValue={content.durationProperty} /> : <></>}
                     {content.teamProperty ? <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue={content.teamProperty} /> : <></>}

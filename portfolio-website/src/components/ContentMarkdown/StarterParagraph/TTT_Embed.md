@@ -1,0 +1,2 @@
+- **Purposes of embedding a language in another**: Mainly, enabling easier scripting within a specific application via a part of the functionality of the full source code. This can mean level editor or game modding features, or full-on tooling for new application components. It also removes the need to publicize all source code to enable modding.
+- **Performance considerations**: JavaScript is a poor choice to resort to for such a task if we consider performance. Unsurprising, but still empirical result.

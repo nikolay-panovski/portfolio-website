@@ -2,6 +2,12 @@ import MD_IMTSUnity_Starter from "components/ContentMarkdown/StarterParagraph/IM
 import MD_IMTSUnity_Main from "components/ContentMarkdown/MainParagraph/IMTS_Unity.md";
 import MD_ScrMult_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_ScrMult.md";
 import MD_ScrMult_Main from "components/ContentMarkdown/MainParagraph/IMTS_ScrMult.md";
+import MD_TTT_Starter from "components/ContentMarkdown/StarterParagraph/TTT_Embed.md";
+import MD_TTT_Main from "components/ContentMarkdown/MainParagraph/TTT_Embed.md";
+
+import GitHubLogo from "icons/Logo_GitHub_Light.png";
+import UnityWebLogo from "icons/logo-unity-light.png";
+import DownloadLogo from "icons/icons8-download-96-light.png";
 
 async function fetchMarkdownText(markdown) {
     return fetch(markdown).then((response) => response.text());
@@ -10,16 +16,25 @@ async function fetchMarkdownText(markdown) {
 const ListOfProjectContent = [
     {
         name: "City games concept prototype",
-        backgroundURL: "",
+        backgroundURL: "/images/Unity_Prototype_DetailsHeading.png",
         durationProperty: "2 weeks",
         teamProperty: "Individual (Group project)",
         clientProperty: "EU ACuTe",
         locationProperty: "Enschede (Netherlands)",
         headerContent: [
-            <iframe width="560" height="315" src="" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/23QcIhjb5-g?si=7uFTEriqOFGZ1nIV" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowFullScreen></iframe>
         ],
         headerButtons: [
-
+            <a href="https://nikolay-panovski.github.io/CityGames_Build/"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={UnityWebLogo} alt="Unity logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Play in browser</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/CityGames"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See GitHub source</p>
+            </a>,
         ],
         mainGalleryContent: [
 
@@ -185,7 +200,7 @@ const ListOfProjectContent = [
     },
     {
         name: "Research: Embedding languages for game modding",
-        backgroundURL: "",
+        backgroundURL: "https://wofsauge.github.io/IsaacDocs/rep/images/infographics/Isaac%20Callbacks.svg",
         durationProperty: "2 weeks",
         teamProperty: "Individual",
         clientProperty: "",
@@ -197,10 +212,12 @@ const ListOfProjectContent = [
 
         ],
         mainGalleryContent: [
-
+            <img src="/images/TTT_embed_flow_Cover.png" alt="Research embedding Lua and JavaScript in C++" />,
+            <img src="/images/gallery/TTT_Embed/chart1.png" alt="Research embedding Lua and JavaScript in C++" />,
+            <img src="/images/gallery/TTT_Embed/chart2.png" alt="Research embedding Lua and JavaScript in C++" />,
         ],
-        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
+        starterParagraphContent: await fetchMarkdownText(MD_TTT_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_TTT_Main),
     },
 
 ];
