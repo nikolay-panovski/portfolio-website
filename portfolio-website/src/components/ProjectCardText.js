@@ -3,7 +3,7 @@
 function ProjectCardText( { text } ) {
     return (
         <>
-            <p className=''>{text}</p>
+            <p className='text-base md:text-lg'>{text}</p>
         </>
     );
 }
