@@ -13,15 +13,31 @@ import ASPLogo from "icons/aspnet.png";
 
 const ListOfProjectCards = [
     {
-        name: "IMT&S Unity Prototype",
+        name: "Furfare",
+        coverUrl: "/images/FurfareGameplay_Cover.png",
+        tags: ["Unity", "UI", "Games", "Practical"],
+        durationDescriber: "Duration",
+        durationProperty: "8 weeks",
+        teamDescriber: "",
+        teamProperty: "2 programmers (Group project)",
+        clientDescriber: "Client",
+        clientProperty: "WIRWAR - Gaming Festival Twente (Netherlands)",
+        expandableIcons: [
+            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+        ],
+        cardText: `A "Bomberman Dodgeball" multiplayer party game where animals hit each other with whatever they can pick up!`
+    },
+    {
+        name: "City games concept prototype",
         coverUrl: "/images/Unity_Prototype_Overview.png",
         tags: ["Unity", "Practical", "Games"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
-        teamProperty: "Individual",
+        teamProperty: "Individual (Group project)",
         clientDescriber: "Client",
-        clientProperty: "ACuTe for Nova Gorica (Slovenia)",
+        clientProperty: "EU ACuTe for Nova Gorica (Slovenia)",
         expandableIcons: [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
@@ -29,35 +45,19 @@ const ListOfProjectCards = [
         cardText: `Concept prototype under fast development for several minigames with real-world elements.`
     },
     {
-        name: "IMT&S Phone-controllable screens experience",
+        name: "Phone-controllable screens experience",
         coverUrl: "/images/ScrMult_Cover.png",
         tags: ["JavaScript", "Practical", "Device Communication", "Installations"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
-        teamProperty: "Individual",
+        teamProperty: "Individual (Group project)",
         clientDescriber: "Client",
-        clientProperty: "ACuTe for Nova Gorica (Slovenia)",
+        clientProperty: "EU ACuTe for Nova Gorica (Slovenia)",
         expandableIcons: [
             { icon: <img src={MQTTLogo} alt="MQTT logo" width="30px" height="30px" />, propertyValue: "MQTT"}, 
             { icon: <JSLogo width="30px" height="30px"/>, propertyValue: "JavaScript"}, 
             { icon: <ReactLogo width="30px" height="30px"/>, propertyValue: "React"}, 
-        ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
-    },
-    {
-        name: "Furfare",
-        coverUrl: "/images/furfare_main_menu_temp.png",
-        tags: ["Unity", "UI", "Games", "Practical"],
-        durationDescriber: "Duration",
-        durationProperty: "8 weeks",
-        teamDescriber: "",
-        teamProperty: "Individual",
-        clientDescriber: "Client",
-        clientProperty: "WIRWAR - Gaming Festival Twente",
-        expandableIcons: [
-            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
         ],
         cardText: `Concept prototype under fast development for several minigames with real-world elements.`
     },
@@ -87,9 +87,9 @@ const ListOfProjectCards = [
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
-        teamProperty: "Individual",
+        teamProperty: "Individual (Internship)",
         clientDescriber: "Client",
-        clientProperty: "Museum \"Het Palthe Huis\"",
+        clientProperty: "Museum \"Het Palthe Huis\" (Netherlands)",
         expandableIcons: [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
@@ -103,9 +103,9 @@ const ListOfProjectCards = [
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
-        teamProperty: "Individual",
+        teamProperty: "Individual (Internship)",
         clientDescriber: "Client",
-        clientProperty: "Regionale Stichting Enterse Zomp",
+        clientProperty: "Regionale Stichting Enterse Zomp (Netherlands)",
         expandableIcons: [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 

@@ -9,7 +9,7 @@ async function fetchMarkdownText(markdown) {
 
 const ListOfProjectContent = [
     {
-        name: "IMT&S Unity Prototype",
+        name: "City games concept prototype",
         backgroundURL: "",
         durationProperty: "",
         teamProperty: "",
@@ -28,12 +28,12 @@ const ListOfProjectContent = [
         mainParagraphContent: await fetchMarkdownText(MD_IMTSUnity_Main),
     },
     {
-        name: "IMT&S Phone-controllable screens experience",
+        name: "Phone-controllable screens experience",
         backgroundURL: "/images/ScrMult_Cover.png",
         durationProperty: "2 weeks",
         teamProperty: "Individual",
         clientProperty: "ACuTe for Nova Gorica",
-        locationProperty: "Enschede (NL)",
+        locationProperty: "Enschede (Netherlands)",
         headerContent: [
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NFvQ7CNCCdg?si=aTWd9YTA232Rq0mk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         ],
@@ -48,7 +48,7 @@ const ListOfProjectContent = [
     },
     {
         name: "Furfare",
-        backgroundURL: "",
+        backgroundURL: "/images/furfare_main_menu_temp.png",
         durationProperty: "",
         teamProperty: "",
         clientProperty: "",
