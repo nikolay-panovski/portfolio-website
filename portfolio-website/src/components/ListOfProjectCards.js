@@ -5,6 +5,7 @@ import { ReactComponent as LuaLogo } from "icons/Logo_Lua.svg";
 import { ReactComponent as CPPLogo } from "icons/icons8-c++.svg";
 import { ReactComponent as MongoDBLogo } from "icons/icons8-mongodb.svg";
 import { ReactComponent as ReactLogo } from "icons/Logo_React.svg";
+import { ReactComponent as ElectronLogo } from "icons/Logo_Electron.svg";
 import MQTTLogo from "icons/mqtt.png";
 import VueLogo from "icons/icons8-vue.png";
 import ProcessingLogo from "icons/processing-1024.png";
@@ -27,90 +28,6 @@ const ListOfProjectCards = [
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
         ],
         cardText: `A "Bomberman Dodgeball" multiplayer party game where animals hit each other with whatever they can pick up!`
-    },
-    {
-        name: "City games concept prototype",
-        coverUrl: "/images/Unity_Prototype_Overview.png",
-        tags: ["Unity", "Practical", "Games"],
-        durationDescriber: "Duration",
-        durationProperty: "2 weeks",
-        teamDescriber: "",
-        teamProperty: "Individual (Group project)",
-        clientDescriber: "Client",
-        clientProperty: "EU ACuTe for Nova Gorica (Slovenia)",
-        expandableIcons: [
-            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
-        ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
-    },
-    {
-        name: "Phone-controllable screens experience",
-        coverUrl: "/images/ScrMult_Cover.png",
-        tags: ["JavaScript", "Practical", "Device Communication", "Installations"],
-        durationDescriber: "Duration",
-        durationProperty: "2 weeks",
-        teamDescriber: "",
-        teamProperty: "Individual (Group project)",
-        clientDescriber: "Client",
-        clientProperty: "EU ACuTe for Nova Gorica (Slovenia)",
-        expandableIcons: [
-            { icon: <img src={MQTTLogo} alt="MQTT logo" width="30px" height="30px" />, propertyValue: "MQTT"}, 
-            { icon: <JSLogo width="30px" height="30px"/>, propertyValue: "JavaScript"}, 
-            { icon: <ReactLogo width="30px" height="30px"/>, propertyValue: "React"}, 
-        ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
-    },
-    {
-        name: "Web Development Projects",
-        coverUrl: "/images/EASV_WebDev_Cover.png",
-        tags: ["JavaScript", "Practical"],
-        durationDescriber: "",
-        durationProperty: "Various",
-        teamDescriber: "",
-        teamProperty: "Individual",
-        clientDescriber: "Minor",
-        clientProperty: "Web Development (EASV, Denmark)",
-        expandableIcons: [
-            { icon: <img src={WebLogo} alt="HTML+CSS+JS logo" width="30px" height="30px" />, propertyValue: "Web"}, 
-            { icon: <img src={VueLogo} alt="Vue logo" width="30px" height="30px" />, propertyValue: "Vue"}, 
-            { icon: <img src={ASPLogo} alt="ASP.NET MVC logo" width="30px" height="30px" />, propertyValue: "ASP.NET"}, 
-            { icon: <MongoDBLogo width="30px" height="30px"/>, propertyValue: "MongoDB"}, 
-        ],
-        cardText: `A collection of smaller projects where I learned about various Web aspects - frontend, backend, CI/CD, frameworks.
-            Integral to building my portfolio site!`
-    },
-    {
-        name: "RFID Interactive Video Experience",
-        coverUrl: "/images/100FAT_Palthe_Cover.png",
-        tags: ["Unity", "Practical", "Device Communication", "Installations"],
-        durationDescriber: "Duration",
-        durationProperty: "2 weeks",
-        teamDescriber: "",
-        teamProperty: "Individual (Internship)",
-        clientDescriber: "Client",
-        clientProperty: "Museum \"Het Palthe Huis\" (Netherlands)",
-        expandableIcons: [
-            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
-        ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
-    },
-    {
-        name: "Deuvels tikken game",
-        coverUrl: "/images/100FAT_Deuvels_IRL.png",
-        tags: ["Unity", "Practical", "UI", "Device Communication", "Games", "Installations"],
-        durationDescriber: "Duration",
-        durationProperty: "2 weeks",
-        teamDescriber: "",
-        teamProperty: "Individual (Internship)",
-        clientDescriber: "Client",
-        clientProperty: "Regionale Stichting Enterse Zomp (Netherlands)",
-        expandableIcons: [
-            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
-        ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
     },
     {
         name: "Practical Research: Game Juice",
@@ -144,11 +61,96 @@ const ListOfProjectCards = [
         cardText: `Concept prototype under fast development for several minigames with real-world elements.`
     },
     {
+        name: "City games concept prototype",
+        coverUrl: "/images/Unity_Prototype_Overview.png",
+        tags: ["Unity", "Practical", "Games"],
+        durationDescriber: "Duration",
+        durationProperty: "2 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual (Group project)",
+        clientDescriber: "Client",
+        clientProperty: "EU ACuTe for Nova Gorica (Slovenia)",
+        expandableIcons: [
+            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+        ],
+        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
+    },
+    {
+        name: "Phone-controllable screens experience",
+        coverUrl: "/images/ScrMult_Cover.png",
+        tags: ["JavaScript", "Practical", "Device Communication", "Installations"],
+        durationDescriber: "Duration",
+        durationProperty: "4 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual (Group project)",
+        clientDescriber: "Client",
+        clientProperty: "EU ACuTe for Nova Gorica (Slovenia)",
+        expandableIcons: [
+            { icon: <img src={MQTTLogo} alt="MQTT logo" width="30px" height="30px" />, propertyValue: "MQTT"}, 
+            { icon: <JSLogo width="30px" height="30px"/>, propertyValue: "JavaScript"}, 
+            { icon: <ReactLogo width="30px" height="30px"/>, propertyValue: "React"}, 
+            { icon: <ElectronLogo width="30px" height="30px"/>, propertyValue: "Electron"}, 
+        ],
+        cardText: `Mechanism for toggling images on selected screens via a specialized phone app.`
+    },
+    {
+        name: "Web Development Projects",
+        coverUrl: "/images/EASV_WebDev_Cover.png",
+        tags: ["JavaScript", "Practical"],
+        durationDescriber: "",
+        durationProperty: "Various",
+        teamDescriber: "",
+        teamProperty: "Individual",
+        clientDescriber: "Minor",
+        clientProperty: "Web Development (EASV, Denmark)",
+        expandableIcons: [
+            { icon: <img src={WebLogo} alt="HTML+CSS+JS logo" width="30px" height="30px" />, propertyValue: "Web"}, 
+            { icon: <img src={VueLogo} alt="Vue logo" width="30px" height="30px" />, propertyValue: "Vue"}, 
+            { icon: <img src={ASPLogo} alt="ASP.NET MVC logo" width="30px" height="30px" />, propertyValue: "ASP.NET"}, 
+            { icon: <MongoDBLogo width="30px" height="30px"/>, propertyValue: "MongoDB"}, 
+        ],
+        cardText: `A collection of smaller projects where I learned about various Web aspects - frontend, backend, CI/CD, frameworks.
+            Integral to building my portfolio site!`
+    },
+    {
+        name: "RFID Interactive Video Experience",
+        coverUrl: "/images/100FAT_Palthe_Cover.png",
+        tags: ["Unity", "Practical", "Device Communication", "Installations"],
+        durationDescriber: "Duration",
+        durationProperty: "8 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual (Internship)",
+        clientDescriber: "Client",
+        clientProperty: "Museum \"Het Palthe Huis\" (Netherlands)",
+        expandableIcons: [
+            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+        ],
+        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
+    },
+    {
+        name: "Deuvels tikken game",
+        coverUrl: "/images/100FAT_Deuvels_IRL.png",
+        tags: ["Unity", "Practical", "UI", "Device Communication", "Games", "Installations"],
+        durationDescriber: "Duration",
+        durationProperty: "4.5 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual (Internship)",
+        clientDescriber: "Client",
+        clientProperty: "Regionale Stichting Enterse Zomp (Netherlands)",
+        expandableIcons: [
+            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+        ],
+        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
+    },
+    {
         name: "Tower defense prototype",
         coverUrl: "/images/SA_TD_Game.png",
         tags: ["Unity", "Games", "Practical"],
         durationDescriber: "Duration",
-        durationProperty: "2 weeks",
+        durationProperty: "5 weeks",
         teamDescriber: "",
         teamProperty: "Individual",
         clientDescriber: "",

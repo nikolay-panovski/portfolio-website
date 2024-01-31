@@ -11,10 +11,10 @@ const ListOfProjectContent = [
     {
         name: "City games concept prototype",
         backgroundURL: "",
-        durationProperty: "",
-        teamProperty: "",
-        clientProperty: "",
-        locationProperty: "",
+        durationProperty: "2 weeks",
+        teamProperty: "Individual (Group project)",
+        clientProperty: "EU ACuTe",
+        locationProperty: "Enschede (Netherlands)",
         headerContent: [
             <iframe width="560" height="315" src="" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         ],
@@ -31,8 +31,8 @@ const ListOfProjectContent = [
         name: "Phone-controllable screens experience",
         backgroundURL: "/images/ScrMult_Cover.png",
         durationProperty: "2 weeks",
-        teamProperty: "Individual",
-        clientProperty: "ACuTe for Nova Gorica",
+        teamProperty: "Individual (Group project)",
+        clientProperty: "EU ACuTe",
         locationProperty: "Enschede (Netherlands)",
         headerContent: [
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NFvQ7CNCCdg?si=aTWd9YTA232Rq0mk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -49,10 +49,10 @@ const ListOfProjectContent = [
     {
         name: "Furfare",
         backgroundURL: "/images/furfare_main_menu_temp.png",
-        durationProperty: "",
-        teamProperty: "",
-        clientProperty: "",
-        locationProperty: "",
+        durationProperty: "8 weeks",
+        teamProperty: "2 programmers (Group project)",
+        clientProperty: "WIRWAR Festival (Netherlands)",
+        locationProperty: "Enschede (Netherlands)",
         headerContent: [
             
         ],
@@ -68,10 +68,10 @@ const ListOfProjectContent = [
     {
         name: "Web Development Projects",
         backgroundURL: "",
-        durationProperty: "",
-        teamProperty: "",
-        clientProperty: "",
-        locationProperty: "",
+        durationProperty: "Various",
+        teamProperty: "Individual",
+        clientProperty: "Minor Web Development",
+        locationProperty: "EASV, Esbjerg, Denmark",
         headerContent: [
             
         ],
@@ -87,10 +87,10 @@ const ListOfProjectContent = [
     {
         name: "RFID Interactive Video Experience",
         backgroundURL: "",
-        durationProperty: "",
-        teamProperty: "",
-        clientProperty: "",
-        locationProperty: "",
+        durationProperty: "8 weeks",
+        teamProperty: "Individual (Internship)",
+        clientProperty: "Palthe Huis (Netherlands)",
+        locationProperty: "Enschede (Netherlands)",
         headerContent: [
             
         ],
@@ -106,10 +106,10 @@ const ListOfProjectContent = [
     {
         name: "Deuvels tikken game",
         backgroundURL: "",
-        durationProperty: "",
-        teamProperty: "",
-        clientProperty: "",
-        locationProperty: "",
+        durationProperty: "4.5 weeks",
+        teamProperty: "Individual (Internship)",
+        clientProperty: "Enterse Zomp (Netherlands)",
+        locationProperty: "Enschede (Netherlands)",
         headerContent: [
             
         ],
@@ -125,8 +125,8 @@ const ListOfProjectContent = [
     {
         name: "Practical Research: Game Juice",
         backgroundURL: "",
-        durationProperty: "",
-        teamProperty: "",
+        durationProperty: "2 weeks",
+        teamProperty: "Individual",
         clientProperty: "",
         locationProperty: "",
         headerContent: [
@@ -144,8 +144,8 @@ const ListOfProjectContent = [
     {
         name: "Desk Research: Game Feel",
         backgroundURL: "",
-        durationProperty: "",
-        teamProperty: "",
+        durationProperty: "2 weeks",
+        teamProperty: "Individual",
         clientProperty: "",
         locationProperty: "",
         headerContent: [
@@ -163,10 +163,10 @@ const ListOfProjectContent = [
     {
         name: "Tower defense prototype",
         backgroundURL: "",
-        durationProperty: "",
-        teamProperty: "",
+        durationProperty: "5 weeks",
+        teamProperty: "Individual",
         clientProperty: "",
-        locationProperty: "",
+        locationProperty: "Enschede (Netherlands)",
         headerContent: [
             
         ],
@@ -182,8 +182,8 @@ const ListOfProjectContent = [
     {
         name: "Research: Embedding languages for game modding",
         backgroundURL: "",
-        durationProperty: "",
-        teamProperty: "",
+        durationProperty: "2 weeks",
+        teamProperty: "Individual",
         clientProperty: "",
         locationProperty: "",
         headerContent: [
