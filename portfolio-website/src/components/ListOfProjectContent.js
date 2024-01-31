@@ -41,7 +41,10 @@ const ListOfProjectContent = [
 
         ],
         mainGalleryContent: [
-
+            <img src="/images/gallery/ScrMult/ScrMult_AppEnd.png" alt="Phone-controllable screens experience" />,
+            <img src="/images/gallery/ScrMult/ScrMult_UnityView.png" alt="Phone-controllable screens experience" />,
+            <img src="/images/gallery/ScrMult/ScrMult_DeviceEnd.png" alt="Phone-controllable screens experience" />,
+            <img src="/images/gallery/ScrMult/ScrMult_AppEnd_IRL.png" alt="Phone-controllable screens experience" />,
         ],
         starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
         mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
