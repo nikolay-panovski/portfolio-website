@@ -41,6 +41,7 @@ const ListOfProjectContent = [
 
         ],
         mainGalleryContent: [
+            <img src="/images/gallery/ScrMult/ScrMult_InitialIdea.png" alt="Phone-controllable screens experience" />,
             <img src="/images/gallery/ScrMult/ScrMult_AppEnd.png" alt="Phone-controllable screens experience" />,
             <img src="/images/gallery/ScrMult/ScrMult_UnityView.png" alt="Phone-controllable screens experience" />,
             <img src="/images/gallery/ScrMult/ScrMult_DeviceEnd.png" alt="Phone-controllable screens experience" />,
