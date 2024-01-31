@@ -1,3 +1,5 @@
+import MD_IMTSUnity_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_Unity.md";
+import MD_IMTSUnity_Main from "components/ContentMarkdown/MainParagraph/IMTS_Unity.md";
 import MD_ScrMult_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_ScrMult.md";
 import MD_ScrMult_Main from "components/ContentMarkdown/MainParagraph/IMTS_ScrMult.md";
 
@@ -16,13 +18,14 @@ const ListOfProjectContent = [
         headerContent: [
             <iframe width="560" height="315" src="" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         ],
+        headerButtons: [
+
+        ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: [
-
-        ],
-        mainParagraphContent: ``,
+        starterParagraphContent: await fetchMarkdownText(MD_IMTSUnity_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_IMTSUnity_Main),
     },
     {
         name: "IMT&S Phone-controllable screens experience",
@@ -33,6 +36,9 @@ const ListOfProjectContent = [
         locationProperty: "Enschede (NL)",
         headerContent: [
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NFvQ7CNCCdg?si=aTWd9YTA232Rq0mk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        ],
+        headerButtons: [
+
         ],
         mainGalleryContent: [
 
@@ -50,13 +56,14 @@ const ListOfProjectContent = [
         headerContent: [
             
         ],
+        headerButtons: [
+
+        ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: [
-            
-        ],
-        mainParagraphContent: ``,
+        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
     },
     {
         name: "Web Development Projects",
@@ -68,13 +75,14 @@ const ListOfProjectContent = [
         headerContent: [
             
         ],
+        headerButtons: [
+
+        ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: [
-            
-        ],
-        mainParagraphContent: ``,
+        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
     },
     {
         name: "RFID Interactive Video Experience",
@@ -86,13 +94,14 @@ const ListOfProjectContent = [
         headerContent: [
             
         ],
+        headerButtons: [
+
+        ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: [
-            
-        ],
-        mainParagraphContent: ``,
+        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
     },
     {
         name: "Deuvels tikken game",
@@ -104,13 +113,14 @@ const ListOfProjectContent = [
         headerContent: [
             
         ],
+        headerButtons: [
+
+        ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: [
-            
-        ],
-        mainParagraphContent: ``,
+        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
     },
     {
         name: "Practical Research: Game Juice",
@@ -122,13 +132,14 @@ const ListOfProjectContent = [
         headerContent: [
             
         ],
+        headerButtons: [
+
+        ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: [
-            
-        ],
-        mainParagraphContent: ``,
+        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
     },
     {
         name: "Desk Research: Game Feel",
@@ -140,13 +151,14 @@ const ListOfProjectContent = [
         headerContent: [
             
         ],
+        headerButtons: [
+
+        ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: [
-            
-        ],
-        mainParagraphContent: ``,
+        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
     },
     {
         name: "Tower defense prototype",
@@ -158,13 +170,14 @@ const ListOfProjectContent = [
         headerContent: [
             
         ],
+        headerButtons: [
+
+        ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: [
-            
-        ],
-        mainParagraphContent: ``,
+        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
     },
     {
         name: "Research: Embedding languages for game modding",
@@ -176,13 +189,14 @@ const ListOfProjectContent = [
         headerContent: [
             
         ],
+        headerButtons: [
+
+        ],
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: [
-            
-        ],
-        mainParagraphContent: ``,
+        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
     },
 
 ];
