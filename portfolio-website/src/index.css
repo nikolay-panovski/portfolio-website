@@ -44,6 +44,10 @@ header h3 {
   list-style-type: disc;
 }
 
+.markdown li {
+  @apply my-3
+}
+
 .markdown a {
   text-decoration: underline;
 }
