@@ -23,11 +23,11 @@ function ProjectPage( { } ) {
                     style={content.backgroundURL ? {backgroundSize: "cover", backgroundImage:`linear-gradient( rgba(40,44,52,.85), rgba(40,44,52,.85) ), url(${content.backgroundURL})`} : {} }>
                 <h1 className="text-4xl text-center w-full top-1/4">{name}</h1>
 
-                <div className='flex flex-row wrap-row justify-evenly w-full py-2 px-4'>
+                <div className='flex flex-row flex-wrap justify-evenly w-full py-2 px-4'>
                     {content.headerContent}
                 </div>
 
-                <div className='flex flex-row wrap-row py-2 px-4' > {/* self-start */}
+                <div className='flex flex-row flex-wrap py-2 px-4' > {/* self-start */}
                     {content.durationProperty ? <ProjectProperty icon={<img src={DurationLogo} alt="Logo of running time" width="36px" height="36px" />} propertyValue={content.durationProperty} /> : <></>}
                     {content.teamProperty ? <ProjectProperty icon={<img src={TeamLogo} alt="Logo of team" width="36px" height="36px" />} propertyValue={content.teamProperty} /> : <></>}
                     {content.clientProperty ? <ProjectProperty icon={<img src={ClientLogo} alt="Logo of business clients" width="36px" height="36px" />} propertyValue={content.clientProperty} /> : <></>}
