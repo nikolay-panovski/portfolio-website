@@ -76,6 +76,7 @@ function MainPage() {
 
             <TagSelectorContext.Provider value={{selectedTags, setSelectedTags}}>
                 <h2 className='text-center font-bold mx-auto my-8 text-3xl'>Projects</h2>
+                <p className='text-center mx-auto my-6 text-lg'>Welcome to my projects! My main work is <b>programming</b> for various games and experiences.</p>
                 <p className='text-center mx-auto my-6 text-lg'>Click on the following tags to filter the projects below:</p>
                 <ProjectTagsSelector />
                 <hr />
