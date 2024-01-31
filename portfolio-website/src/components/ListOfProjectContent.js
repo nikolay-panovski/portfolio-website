@@ -2,6 +2,8 @@ import MD_IMTSUnity_Starter from "components/ContentMarkdown/StarterParagraph/IM
 import MD_IMTSUnity_Main from "components/ContentMarkdown/MainParagraph/IMTS_Unity.md";
 import MD_ScrMult_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_ScrMult.md";
 import MD_ScrMult_Main from "components/ContentMarkdown/MainParagraph/IMTS_ScrMult.md";
+import MD_WebDev_Starter from "components/ContentMarkdown/StarterParagraph/WebDev.md";
+import MD_WebDev_Main from "components/ContentMarkdown/MainParagraph/WebDev.md";
 import MD_JuiceP_Starter from "components/ContentMarkdown/StarterParagraph/Juice_Practical.md";
 import MD_JuiceP_Main from "components/ContentMarkdown/MainParagraph/Juice_Practical.md";
 import MD_JuiceD_Starter from "components/ContentMarkdown/StarterParagraph/Juice_Desk.md";
@@ -100,7 +102,7 @@ const ListOfProjectContent = [
     },
     {
         name: "Web Development Projects",
-        backgroundURL: "",
+        backgroundURL: "/images/EASV_Front.jpg",
         durationProperty: "Various",
         teamProperty: "Individual",
         clientProperty: "Minor Web Development",
@@ -109,13 +111,31 @@ const ListOfProjectContent = [
             
         ],
         headerButtons: [
-
+            <a href="https://github.com/nikolay-panovski/PWA_todoapp_frontend"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Code - PWA site (JS)</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/DE_GamesCatalog"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Code - DevEnv app (ASP.NET)</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/nikolay-panovski.github.io"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Code - Portfolio site</p>
+            </a>,
         ],
         mainGalleryContent: [
-
+            <a href="/images/EASV_WebDev_Cover.png"><img src="/images/EASV_WebDev_Cover.png" alt="Web dev project: PWA/API" /></a>,
+            <a href="/images/gallery/WebDev/DevEnv_Cover.png"><img src="/images/gallery/WebDev/DevEnv_Cover.png" alt="Web dev project: Development Environments" /></a>,
+            <a href="/images/gallery/WebDev/API_Code.png"><img src="/images/gallery/WebDev/API_Code.png" alt="Web dev code: PWA/API" /></a>,
+            <a href="/images/gallery/WebDev/DevEnv_Code.png"><img src="/images/gallery/WebDev/DevEnv_Code.png" alt="Web dev code: Development Environments" /></a>,
+            <a href="/images/gallery/WebDev/WebXR_Cover.png"><img src="/images/gallery/WebDev/WebXR_Cover.png" alt="Web dev project: AR/VR Development" /></a>,
         ],
-        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
+        starterParagraphContent: await fetchMarkdownText(MD_WebDev_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_WebDev_Main),
     },
     {
         name: "RFID Interactive Video Experience",
