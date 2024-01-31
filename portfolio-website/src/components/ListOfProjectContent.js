@@ -1,4 +1,9 @@
+import MD_ScrMult_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_ScrMult.md";
+import MD_ScrMult_Main from "components/ContentMarkdown/MainParagraph/IMTS_ScrMult.md";
 
+async function fetchMarkdownText(markdown) {
+    return fetch(markdown).then((response) => response.text());
+}
 
 const ListOfProjectContent = [
     {
@@ -32,12 +37,8 @@ const ListOfProjectContent = [
         mainGalleryContent: [
 
         ],
-        starterParagraphContent: [
-            "MQTT communication",
-            "placeholder: Toto communication",
-            "placeholder: Electron",
-        ],
-        mainParagraphContent: `https://www.lipsum.com/ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
     },
     {
         name: "Furfare",

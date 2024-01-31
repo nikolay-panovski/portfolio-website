@@ -37,9 +37,7 @@ function ProjectPage( { } ) {
             <main>
                 <h2 className='text-center font-bold mx-auto my-8 text-3xl'>Project description</h2>
                 <h3 className='text-left font-bold mx-16 my-8 text-2xl'>What I learned</h3>
-                <ul className="list-disc mx-24 my-4 text-xl">
-                    {content.starterParagraphContent.map(text => <li key={text} className="mb-2">{text}</li>)}
-                </ul>
+                <Markdown remarkPlugins={[remarkGfm]} className='text-left mx-16 my-8 text-xl'>{content.starterParagraphContent}</Markdown>
                 <h3 className='text-left font-bold mx-16 my-8 text-2xl'>Overview</h3>
                 <Markdown remarkPlugins={[remarkGfm]} className='text-left mx-16 my-8 text-xl'>{content.mainParagraphContent}</Markdown>
             </main>

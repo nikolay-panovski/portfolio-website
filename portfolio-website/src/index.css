@@ -38,6 +38,10 @@ header h3 {
   background-color: #282c34;
 }
 
+ul {
+  list-style-type: disc;
+}
+
 /* Expanding button section - adapted from https://stackoverflow.com/a/60926904 */
 
 @layer components {

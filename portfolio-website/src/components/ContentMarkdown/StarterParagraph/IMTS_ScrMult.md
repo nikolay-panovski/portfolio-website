@@ -1,0 +1,3 @@
+- MQTT communication
+- placeholder: Toto communication
+- placeholder: Electron
