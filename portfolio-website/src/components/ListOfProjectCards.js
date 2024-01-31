@@ -44,7 +44,8 @@ const ListOfProjectCards = [
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
             { icon: <img src={ProcessingLogo} alt="Processing engine logo" width="30px" height="30px" />, propertyValue: "Processing (Java)"}, 
         ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
+        cardText: `I researched and added "juicy" audiovisual effects to two games I worked on previously, 
+                    in an attempt to make them more appealing.`
     },
     {
         name: "Desk Research: Game Feel",
@@ -58,7 +59,8 @@ const ListOfProjectCards = [
         clientProperty: "Personal/School assignment",
         expandableIcons: [
         ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
+        cardText: `White paper on the topic of game feel, its definition(s) and the need for its better understanding 
+                    and unified vocabulary.`
     },
     {
         name: "City games concept prototype",
@@ -127,7 +129,7 @@ const ListOfProjectCards = [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
         ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
+        cardText: `Software and UI work for turning a video story into a smooth "RPG" experience with scannable real-world items.`
     },
     {
         name: "Deuvels tikken game",
@@ -143,7 +145,8 @@ const ListOfProjectCards = [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
         ],
-        cardText: `Concept prototype under fast development for several minigames with real-world elements.`
+        cardText: `A minigame teaching about hammering dowels to build a ship, with a rotatable and hammerable controller. 
+                    I implemented the software, including a step-by-step tutorial and a game state loop.`
     },
     {
         name: "Tower defense prototype",
@@ -159,7 +162,8 @@ const ListOfProjectCards = [
             { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
             { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
         ],
-        cardText: `A game created with OOP design patterns, making possible a variety of towers, shot effects, and enemies.`
+        cardText: `A game created according to OOP design patterns, making possible a variety of towers, shot effects, 
+                    and enemies (with a couple of each included). "Targeted" at people who dislike grass!`
     },
     {
         name: "Research: Embedding languages for game modding",
@@ -176,8 +180,8 @@ const ListOfProjectCards = [
             { icon: <JSLogo width="30px" height="30px"/>, propertyValue: "JavaScript"}, 
             { icon: <CPPLogo width="30px" height="30px"/>, propertyValue: "C++"}, 
         ],
-        cardText: `Embedded Lua and JavaScript in C++ to measure their performance in simple operations, 
-                    justified with the popularity of game modding and scripting.`
+        cardText: `I embedded Lua and JavaScript in C++ to measure their performance in simple operations, 
+                    briefly exploring the usage of embedded languages for game modding and scripting.`
     },
 
 ];
