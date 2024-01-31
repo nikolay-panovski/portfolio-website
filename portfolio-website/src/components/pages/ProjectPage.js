@@ -37,9 +37,9 @@ function ProjectPage( { } ) {
             <main>
                 <h2 className='text-center font-bold mx-auto my-8 text-3xl'>Project description</h2>
                 <h3 className='text-left font-bold mx-16 my-8 text-2xl'>What I learned</h3>
-                <Markdown remarkPlugins={[remarkGfm]} className='markdown text-left mx-16 my-8 text-xl'>{content.starterParagraphContent}</Markdown>
+                <Markdown remarkPlugins={[remarkGfm]} className='markdown text-left mx-16 my-8 text-base sm:text-lg md:text-xl'>{content.starterParagraphContent}</Markdown>
                 <h3 className='text-left font-bold mx-16 my-8 text-2xl'>Overview</h3>
-                <Markdown remarkPlugins={[remarkGfm]} className='markdown text-left mx-16 my-8 text-xl'>{content.mainParagraphContent}</Markdown>
+                <Markdown remarkPlugins={[remarkGfm]} className='markdown text-left mx-16 my-8 text-base sm:text-lg md:text-xl'>{content.mainParagraphContent}</Markdown>
                 <h3 className='text-left font-bold mx-16 my-8 text-2xl'>Gallery</h3>
                 {/* https://www.material-tailwind.com/docs/react/gallery */}
                 <div className="grid grid-cols-1 gap-4 mx-16 my-8 sm:grid-cols-2 md:grid-cols-3">
