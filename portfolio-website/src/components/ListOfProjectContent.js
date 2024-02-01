@@ -1,3 +1,9 @@
+//import MD_Furfare_Starter from "components/ContentMarkdown/StarterParagraph/Furfare.md";
+//import MD_Furfare_Main from "components/ContentMarkdown/MainParagraph/Furfare.md";
+import MD_100FAT_PH_Starter from "components/ContentMarkdown/StarterParagraph/100FAT_Palthe.md";
+import MD_100FAT_PH_Main from "components/ContentMarkdown/MainParagraph/100FAT_Palthe.md";
+//import MD_100FAT_DT_Starter from "components/ContentMarkdown/StarterParagraph/100FAT_Deuvels.md";
+//import MD_100FAT_DT_Main from "components/ContentMarkdown/MainParagraph/100FAT_Deuvels.md";
 import MD_IMTSUnity_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_Unity.md";
 import MD_IMTSUnity_Main from "components/ContentMarkdown/MainParagraph/IMTS_Unity.md";
 import MD_ScrMult_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_ScrMult.md";
@@ -139,22 +145,32 @@ const ListOfProjectContent = [
     },
     {
         name: "RFID Interactive Video Experience",
-        backgroundURL: "",
+        backgroundURL: "/images/100FAT_Palthe_ItemCover.jpg",
         durationProperty: "8 weeks",
         teamProperty: "Individual (Internship)",
         clientProperty: "Palthe Huis (Netherlands)",
         locationProperty: "Enschede (Netherlands)",
         headerContent: [
-            
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CXMD6cHiJXw?si=LBCAKfCuEhYU1a_h" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7G8toOqyIjw?si=ithSw9Q2-eKaFpj7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         ],
         headerButtons: [
 
         ],
         mainGalleryContent: [
-
+            <a href="/images/gallery/100FAT_Palthe/Hanze_Watchalong.jpg"><img src="/images/gallery/100FAT_Palthe/Hanze_Watchalong.jpg" alt="Frame from live experience with visitors" /></a>,
+            <a href="/images/gallery/100FAT_Palthe/Hanze_IRL_Schraper.jpg"><img src="/images/gallery/100FAT_Palthe/Hanze_IRL_Schraper.jpg" alt="Frame from live experience with visitors" /></a>,
+            <a href="/images/gallery/100FAT_Palthe/Hanze_IRL_Zout.jpg"><img src="/images/gallery/100FAT_Palthe/Hanze_IRL_Zout.jpg" alt="Frame from live experience with visitors" /></a>,
+            <a href="/images/gallery/100FAT_Palthe/Hanze_IRL_Vis.jpg"><img src="/images/gallery/100FAT_Palthe/Hanze_IRL_Vis.jpg" alt="Frame from live experience with visitors" /></a>,
+            <a href="/images/gallery/100FAT_Palthe/Hanze_ItemPick.jpg"><img src="/images/gallery/100FAT_Palthe/Hanze_ItemPick.jpg" alt="Frame from live experience with visitors" /></a>,
+            <a href="/images/gallery/100FAT_Palthe/Hanze_ItemPlace.jpg"><img src="/images/gallery/100FAT_Palthe/Hanze_ItemPlace.jpg" alt="Frame from live experience with visitors" /></a>,
+            <a href="/images/gallery/100FAT_Palthe/Code_RFID.png"><img src="/images/gallery/100FAT_Palthe/Code_RFID.png" alt="Code for video experience (RFID)" /></a>,
+            <a href="/images/gallery/100FAT_Palthe/Code_UIManager.png"><img src="/images/gallery/100FAT_Palthe/Code_UIManager.png" alt="Code for video experience (UI)" /></a>,
+            <a href="/images/gallery/100FAT_Palthe/Hanze_Story_Design_crop.png"><img src="/images/gallery/100FAT_Palthe/Hanze_Story_Design_crop.png" alt="Crop of design document for video experience" /></a>,
+            <a href="/images/gallery/100FAT_Palthe/Hanze_Story_Flowchart_overhaul.png"><img src="/images/gallery/100FAT_Palthe/Hanze_Story_Flowchart_overhaul.png" alt="Flowchart for video experience" /></a>,
         ],
-        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
+        starterParagraphContent: await fetchMarkdownText(MD_100FAT_PH_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_100FAT_PH_Main),
     },
     {
         name: "Deuvels tikken game",
