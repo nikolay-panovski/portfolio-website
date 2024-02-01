@@ -11,6 +11,8 @@ import ProjectProperty from "components/ProjectProperty";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+import Contacts from "components/Contacts";
+
 
 function ProjectPage( { } ) {
     const { name } = useParams();
@@ -49,6 +51,13 @@ function ProjectPage( { } ) {
                 <div className="grid grid-cols-1 gap-4 mx-16 my-8 sm:grid-cols-2 md:grid-cols-3">
                     {content.mainGalleryContent}
                 </div>
+
+                <div className='bg-orange-100'>
+                    <hr />
+                    <Contacts />
+                    <hr />
+                </div>
+
             </main>
         </>
     );

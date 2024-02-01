@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import HeaderGraphic from 'components/HeaderGraphic';
 import ProjectTagsSelector from 'components/ProjectTagsSelector';
 import TagSelectorContext from 'components/TagSelectorContext';
+import AboutMe from 'components/AboutMe';
+import Contacts from 'components/Contacts';
 
 import ProjectCard from 'components/ProjectCard';
 import ProjectCardTitle from 'components/ProjectCardTitle';
@@ -74,17 +76,27 @@ function MainPage() {
             </header>
             <main>
 
-            <TagSelectorContext.Provider value={{selectedTags, setSelectedTags}}>
-                <h2 className='text-center font-bold mx-auto my-8 text-3xl'>Projects</h2>
-                <p className='text-center mx-auto my-6 text-lg'>Welcome to my projects! My main work is <b>programming</b> for various games and experiences.</p>
-                <p className='text-center mx-auto my-6 text-lg'>Click on the following tags to filter the projects below:</p>
-                <ProjectTagsSelector />
+              <TagSelectorContext.Provider value={{selectedTags, setSelectedTags}}>
+                  <h2 className='text-center font-bold mx-auto my-8 text-3xl'>Projects</h2>
+                  <p className='text-center mx-auto my-6 text-lg'>Welcome to my projects! My main work is <b>programming</b> for various games and experiences.</p>
+                  <p className='text-center mx-auto my-6 text-lg'>Click on the following tags to filter the projects below:</p>
+                  <ProjectTagsSelector />
+                  <hr />
+
+                  {selectedCardsList}
+              </TagSelectorContext.Provider>
+
+              <div className='bg-orange-50'>
                 <hr />
-
-                {selectedCardsList}
-            </TagSelectorContext.Provider>
-
-            <hr />
+                <AboutMe />
+                <hr />
+              </div>
+              
+              <div className='bg-orange-100'>
+                <hr />
+                <Contacts />
+                <hr />
+              </div>
 
             </main>
         </>
