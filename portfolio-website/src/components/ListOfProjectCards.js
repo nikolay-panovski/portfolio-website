@@ -97,25 +97,6 @@ const ListOfProjectCards = [
         cardText: `Mechanism for toggling images on selected screens via a specialized phone app.`
     },
     {
-        name: "Web Development Projects",
-        coverUrl: "/images/EASV_WebDev_Cover.png",
-        tags: ["JavaScript", "Practical"],
-        durationDescriber: "",
-        durationProperty: "Various",
-        teamDescriber: "",
-        teamProperty: "Individual",
-        clientDescriber: "Minor",
-        clientProperty: "Web Development (EASV, Denmark)",
-        expandableIcons: [
-            { icon: <img src={WebLogo} alt="HTML+CSS+JS logo" width="30px" height="30px" />, propertyValue: "Web"}, 
-            { icon: <img src={VueLogo} alt="Vue logo" width="30px" height="30px" />, propertyValue: "Vue"}, 
-            { icon: <img src={ASPLogo} alt="ASP.NET MVC logo" width="30px" height="30px" />, propertyValue: "ASP.NET"}, 
-            { icon: <MongoDBLogo width="30px" height="30px"/>, propertyValue: "MongoDB"}, 
-        ],
-        cardText: `A collection of smaller projects where I learned about various Web aspects - frontend, backend, CI/CD, frameworks.
-            Integral to building my portfolio site!`
-    },
-    {
         name: "RFID Interactive Video Experience",
         coverUrl: "/images/100FAT_Palthe_Cover.png",
         tags: ["Unity", "Practical", "Device Communication", "Installations"],
@@ -149,6 +130,25 @@ const ListOfProjectCards = [
                     I implemented the software, including a step-by-step tutorial and a game state loop.`
     },
     {
+        name: "Web Development Projects",
+        coverUrl: "/images/EASV_WebDev_Cover.png",
+        tags: ["JavaScript", "Practical"],
+        durationDescriber: "",
+        durationProperty: "Various",
+        teamDescriber: "",
+        teamProperty: "Individual",
+        clientDescriber: "Minor",
+        clientProperty: "Web Development (EASV, Denmark)",
+        expandableIcons: [
+            { icon: <img src={WebLogo} alt="HTML+CSS+JS logo" width="30px" height="30px" />, propertyValue: "Web"}, 
+            { icon: <img src={VueLogo} alt="Vue logo" width="30px" height="30px" />, propertyValue: "Vue"}, 
+            { icon: <img src={ASPLogo} alt="ASP.NET MVC logo" width="30px" height="30px" />, propertyValue: "ASP.NET"}, 
+            { icon: <MongoDBLogo width="30px" height="30px"/>, propertyValue: "MongoDB"}, 
+        ],
+        cardText: `A collection of smaller projects where I learned about various Web aspects - frontend, backend, CI/CD, frameworks.
+            Integral to building my portfolio site!`
+    },
+    {
         name: "Tower defense prototype",
         coverUrl: "/images/SA_TD_Game.png",
         tags: ["Unity", "Games", "Practical"],
@@ -168,7 +168,7 @@ const ListOfProjectCards = [
     {
         name: "Research: Embedding languages for game modding",
         coverUrl: "/images/TTT_embed_flow_Cover.png",
-        tags: ["Research"],
+        tags: ["JavaScript", "Research"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
