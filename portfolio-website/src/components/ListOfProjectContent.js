@@ -2,8 +2,8 @@
 //import MD_Furfare_Main from "components/ContentMarkdown/MainParagraph/Furfare.md";
 import MD_100FAT_PH_Starter from "components/ContentMarkdown/StarterParagraph/100FAT_Palthe.md";
 import MD_100FAT_PH_Main from "components/ContentMarkdown/MainParagraph/100FAT_Palthe.md";
-//import MD_100FAT_DT_Starter from "components/ContentMarkdown/StarterParagraph/100FAT_Deuvels.md";
-//import MD_100FAT_DT_Main from "components/ContentMarkdown/MainParagraph/100FAT_Deuvels.md";
+import MD_100FAT_DT_Starter from "components/ContentMarkdown/StarterParagraph/100FAT_Deuvels.md";
+import MD_100FAT_DT_Main from "components/ContentMarkdown/MainParagraph/100FAT_Deuvels.md";
 import MD_IMTSUnity_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_Unity.md";
 import MD_IMTSUnity_Main from "components/ContentMarkdown/MainParagraph/IMTS_Unity.md";
 import MD_ScrMult_Starter from "components/ContentMarkdown/StarterParagraph/IMTS_ScrMult.md";
@@ -174,22 +174,31 @@ const ListOfProjectContent = [
     },
     {
         name: "Deuvels tikken game",
-        backgroundURL: "",
+        backgroundURL: "/images/gallery/100FAT_Deuvels/RoomOverview.png",
         durationProperty: "4.5 weeks",
         teamProperty: "Individual (Internship)",
         clientProperty: "Enterse Zomp (Netherlands)",
         locationProperty: "Enschede (Netherlands)",
         headerContent: [
-            
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7GQaD3HwV8I?si=HNGX_-G2MKLgsTcL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Z61GJXM_Am8?si=XmNCHoTEZE73dOj2" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         ],
         headerButtons: [
 
         ],
         mainGalleryContent: [
-
+            <a href="/images/gallery/100FAT_Deuvels/RoomOverview.png"><img src="/images/gallery/100FAT_Deuvels/RoomOverview.png" alt="Reggehub room overview" /></a>,
+            <a href="/images/gallery/100FAT_Deuvels/Game1.png"><img src="/images/gallery/100FAT_Deuvels/Game1.png" alt="Reggehub room overview" /></a>,
+            <a href="/images/gallery/100FAT_Deuvels/Game2.png"><img src="/images/gallery/100FAT_Deuvels/Game2.png" alt="Reggehub room overview" /></a>,
+            <a href="/images/gallery/100FAT_Deuvels/Game3.png"><img src="/images/gallery/100FAT_Deuvels/Game3.png" alt="Reggehub room overview" /></a>,
+            <a href="/images/gallery/100FAT_Deuvels/DisplayGoalRotation-False.png"><img src="/images/gallery/100FAT_Deuvels/DisplayGoalRotation-False.png" alt="Reggehub room overview" /></a>,
+            <a href="/images/gallery/100FAT_Deuvels/DisplayGoalRotation-True.png"><img src="/images/gallery/100FAT_Deuvels/DisplayGoalRotation-True.png" alt="Reggehub room overview" /></a>,
+            <a href="/images/gallery/100FAT_Deuvels/DisplayHitCounter-False.png"><img src="/images/gallery/100FAT_Deuvels/DisplayHitCounter-False.png" alt="Reggehub room overview" /></a>,
+            <a href="/images/gallery/100FAT_Deuvels/DisplayHitCounter-True.png"><img src="/images/gallery/100FAT_Deuvels/DisplayHitCounter-True.png" alt="Reggehub room overview" /></a>,
+            <a href="/images/gallery/100FAT_Deuvels/UnityEarly.png"><img src="/images/gallery/100FAT_Deuvels/UnityEarly.png" alt="Reggehub room overview" /></a>,
         ],
-        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
+        starterParagraphContent: await fetchMarkdownText(MD_100FAT_DT_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_100FAT_DT_Main),
     },
     {
         name: "Practical Research: Game Juice",
