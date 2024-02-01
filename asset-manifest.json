@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.abdb75b0.css",
+    "main.js": "/static/js/main.c6d38176.js",
+    "static/media/processing-1024.png": "/static/media/processing-1024.5e0f04e4cdc1f2a8a534.png",
+    "static/media/weblogos.png": "/static/media/weblogos.9e2517dc2f32727cd3ac.png",
+    "static/media/aspnet.png": "/static/media/aspnet.62f07a000465e8f7d9e2.png",
+    "static/media/492686_square.jpg": "/static/media/492686_square.f34080e1aa4911269d9d.jpg",
+    "static/media/KatahdinRound-Bold.otf": "/static/media/KatahdinRound-Bold.5c99871ecc7c85432263.otf",
+    "static/media/Simply Rounded Bold.ttf": "/static/media/Simply Rounded Bold.0fb670e29eaec829af52.ttf",
+    "static/media/mqtt.png": "/static/media/mqtt.d8a21607abd476982501.png",
+    "static/media/Logo_C_sharp.svg": "/static/media/Logo_C_sharp.72d6dcc144316c8b0604497b10071d70.svg",
+    "static/media/Logo_React.svg": "/static/media/Logo_React.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/IMTS_Unity.md": "/static/media/IMTS_Unity.7c865447b3f10a05f589.md",
+    "static/media/Furfare.md": "/static/media/Furfare.8a63581b37d4da9419c1.md",
+    "static/media/Logo_Electron.svg": "/static/media/Logo_Electron.91be96c43697eb193e6b342bbbdffe93.svg",
+    "static/media/Logo_Lua.svg": "/static/media/Logo_Lua.94b96a6c7f17217f9d35bdc8d65908c8.svg",
+    "static/media/100FAT_Deuvels.md": "/static/media/100FAT_Deuvels.f57ad903b32e426a74fa.md",
+    "static/media/WebDev.md": "/static/media/WebDev.2c20bbfd12b9a9426a1a.md",
+    "static/media/Juice_Desk.md": "/static/media/Juice_Desk.51b378f65a45f027696d.md",
+    "static/media/Juice_Practical.md": "/static/media/Juice_Practical.4ccb037b08add26e2784.md",
+    "static/media/icons8-c++.svg": "/static/media/icons8-c++.f00d9334f1e6c0da4960a74ebe7769cb.svg",
+    "static/media/100FAT_Palthe.md": "/static/media/100FAT_Palthe.99e7f48c34f979564fee.md",
+    "static/media/IMTS_ScrMult.md": "/static/media/IMTS_ScrMult.398244aad8c8277628e9.md",
+    "static/media/SA_TowerD.md": "/static/media/SA_TowerD.fa11e8a1d3dd3750085d.md",
+    "static/media/icons8-unity.svg": "/static/media/icons8-unity.e5094c2ef53f82ec0446f54ef0c49421.svg",
+    "static/media/TTT_Embed.md": "/static/media/TTT_Embed.7794d12e6684b093746a.md",
+    "static/media/icons8-mongodb.svg": "/static/media/icons8-mongodb.3beac5ba18197ccbdea6e2f53e18edcf.svg",
+    "static/media/icons8-external-link.svg": "/static/media/icons8-external-link.a33228e0c7ad32a062f17b1e104e9648.svg",
+    "index.html": "/index.html",
+    "static/media/worldvectorlogo-javascript.svg": "/static/media/worldvectorlogo-javascript.b879f838faf1cb951d1c2230fd933a39.svg",
+    "main.abdb75b0.css.map": "/static/css/main.abdb75b0.css.map",
+    "main.c6d38176.js.map": "/static/js/main.c6d38176.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abdb75b0.css",
+    "static/js/main.c6d38176.js"
+  ]
+}

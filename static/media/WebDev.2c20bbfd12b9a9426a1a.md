@@ -1,0 +1,5 @@
+For my "minor" semester, given the opportunity to broaden my skills outside of game development, I decided to strengthen my "plan B" - web development. For this reason I departed to a partner university with this profile (my institution, Saxion, does not offer strictly web dev courses), and so I ended up in Denmark. This "abroad from abroad" trip allowed me to experience a slightly different environment and change pace, while being useful for learning too. I also have to thank my teachers and classmates for making this a fun experience.
+
+&nbsp;
+
+The teaching method was practical and project-based in Denmark as well, therefore this page presents multiple finished projects to look at, just like the other pages. The encompassed fields are already explained above, but in summary, this course taught me about many fundamental tools and concepts in modern web development, quite fast but in understandable ways. This did not make me a professional at building sites already, but it did enable me to steadily learn more as necessary for future projects.
