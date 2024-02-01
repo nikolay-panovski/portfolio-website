@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Katahdin Round";
+  src: url("./font/KatahdinRound-Bold.otf");
+}
+@font-face {
+  font-family: "Simply Rounded Bold";
+  src: url("./font/Simply\ Rounded\ Bold.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+header h1 {
+  font-family: 'Katahdin Round', sans-serif;
+}
+
+header h3 {
+  font-family: 'Simply Rounded Bold', sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+}
+
+/* Markdown section - directly and explicitly override Tailwind for parsed .md elements not controllable with the classes */
+
+.markdown ul {
+  list-style-type: disc;
+}
+
+.markdown li {
+  @apply my-3
+}
+
+.markdown a {
+  text-decoration: underline;
+}
+
+.markdown a:hover {
+  text-decoration: none;
+}
+
+
+/* Expanding button section - adapted from https://stackoverflow.com/a/60926904 */
+
+@layer components {
+  .card-border {
+    @apply border-solid border rounded-xl border-black/25;
+  }
+
+  .card-my {
+    @apply my-8
+  }
+
+  .card-mx {
+    @apply mx-[15%]
+  }
+
+  .card-research-bg-color {
+    @apply bg-orange-100
+  }
+}
+
+@layer components {
+  .btn-bordered {
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px black;
+  }
+
+  .btn-bordered-selected {
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #0079d5;
+    color: #fff;
+    border: solid 2px black;
+  }
+
+  .btn-bordered-text {
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+  }
+
+  .btn-bordered-text-selected {
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+  }
+
+  .header-btn {
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    border: solid 0.75rem #4e8ab9;
+    border-radius: 1rem;
+  }
+
+  
+
+  .expand-container {
+    position: relative;
+  }
+  
+  .expand-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: width 0.25s;
+    transition: width 0.25s;
+  }
+  
+  .expand-btn .expand-btn-text {
+    max-width: 0;
+    display: inline-block;
+    -webkit-transition: max-width 1s;
+    transition: max-width 1s;
+  }
+  
+  .expand-btn:hover .expand-btn-text {
+    max-width: 300px;
+  }
+}

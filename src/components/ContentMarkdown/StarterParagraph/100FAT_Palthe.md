@@ -1,0 +1,7 @@
+I did this project under 100%FAT as part of my Unity programming internship there. I had complete control and responsibility over the software execution, after being informed of some suitable assets for video reading and RFID scanning. The others delivered on the hardware.
+
+&nbsp;
+
+- **Developing from interaction design**: I joined this project at its very beginning, therefore I had ample opportunity to look at the current designs and parse the needs for the software from them. In order to not make assumptions of my own, I made a design document with extensive descriptions of the participating elements. This, paired with the questions I posed therein, helped both myself and the colleagues at 100%FAT to flesh out many unclarities and leave completely satisfied clients.
+- **Little base work, lots of calibration and polishing**: Out of the 8 weeks available to me as a "soft deadline" for the project, I needed around 2 to deliver the base of the UI the way it was wanted. Afterwards, I had time to make sure all UI transitions are smooth and all elements look as desired, and later on to investigate various bugs with RFID readers. At the end, after various internal tests, I confidently left to my colleagues the knowledge of how things work and which things don't work.
+- **Timing and tweening**: This project demanded harsh usage of asynchronous UI calls to match the timings for transitions of different elements ...or so I believed, until I tried out tweening libraries for the first time and achieved similar results.
