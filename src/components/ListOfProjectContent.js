@@ -319,7 +319,11 @@ const ListOfProjectContent = [
             
         ],
         headerButtons: [
-
+            <a href="https://github.com/nikolay-panovski/TTT_EmbedInCPP/wiki"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See GitHub wiki</p>
+            </a>,
         ],
         mainGalleryContent: [
             <a href="/images/TTT_embed_flow_Cover.png"><img src="/images/TTT_embed_flow_Cover.png" alt="Research embedding Lua and JavaScript in C++" /></a>,
