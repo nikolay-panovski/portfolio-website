@@ -75,7 +75,16 @@ const ListOfProjectContent = [
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NFvQ7CNCCdg?si=aTWd9YTA232Rq0mk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         ],
         headerButtons: [
-
+            <a href="https://github.com/kevinveld2001/citygame/tree/MQTT-ScrMult"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See GitHub source (React app)</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/citygame_ScrMult"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See GitHub source (Electron)</p>
+            </a>,
         ],
         mainGalleryContent: [
             <a href="/images/gallery/ScrMult/ScrMult_InitialIdea.png"><img src="/images/gallery/ScrMult/ScrMult_InitialIdea.png" alt="Phone-controllable screens experience" /></a>,

@@ -1,4 +1,4 @@
-This installation minigame is part of a series of 3 digitalized games representing various steps of building a ship. We did this for the newly opened Reggehub at Enter, our clients being an organization founded around a specific type of boat for the region. The Reggehub would serve as an interactive educational center for visitors, where they can see real-life-sized boats and then "participate" on their own via this room with digital installations.
+This installation minigame is one out of 3 digitalized games representing various steps of building a ship. We did this for the newly opened Reggehub at Enter, our clients being an organization founded around a specific type of boat for the region. The Reggehub would serve as an interactive educational center for visitors, where they can see real-life-sized boats and then "participate" on their own via this room with digital installations.
 
 &nbsp;
 
