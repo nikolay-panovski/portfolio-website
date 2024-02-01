@@ -36,7 +36,7 @@ function AboutMe() {
                 </div>
 
                 {/* this link is cursed: */}
-                <a href=""
+                <a href="/docs/Resume_Nikolay_Panovski.pdf"
                 className="max-w-sm header-btn flex flex-row justify-evenly items-center p-4 mb-4" style={{backgroundColor:"#4e8ab9"}}>
                     <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
                     <p className="font-bold text-2xl">Resume</p>
