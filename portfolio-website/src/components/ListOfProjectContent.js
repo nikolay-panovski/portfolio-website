@@ -1,5 +1,5 @@
-//import MD_Furfare_Starter from "components/ContentMarkdown/StarterParagraph/Furfare.md";
-//import MD_Furfare_Main from "components/ContentMarkdown/MainParagraph/Furfare.md";
+import MD_Furfare_Starter from "components/ContentMarkdown/StarterParagraph/Furfare.md";
+import MD_Furfare_Main from "components/ContentMarkdown/MainParagraph/Furfare.md";
 import MD_100FAT_PH_Starter from "components/ContentMarkdown/StarterParagraph/100FAT_Palthe.md";
 import MD_100FAT_PH_Main from "components/ContentMarkdown/MainParagraph/100FAT_Palthe.md";
 import MD_100FAT_DT_Starter from "components/ContentMarkdown/StarterParagraph/100FAT_Deuvels.md";
@@ -95,16 +95,33 @@ const ListOfProjectContent = [
         clientProperty: "WIRWAR Festival (Netherlands)",
         locationProperty: "Enschede (Netherlands)",
         headerContent: [
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XVgqGERoLbc?si=N-GjvvXNDY0dwiqY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
             
         ],
         headerButtons: [
-
+            <a href="https://github.com/nikolay-panovski/ProjectShowoff_Furfare/releases/tag/v1.1.0"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Download Furfare</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/ProjectShowoff_Furfare/"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See source code</p>
+            </a>,
         ],
         mainGalleryContent: [
+            <a href="/images/gallery/Furfare/CharacterSelect.png"><img src="/images/gallery/Furfare/CharacterSelect.png" alt="Game character select screen" /></a>,
+            <a href="/images/gallery/Furfare/Infographic.png"><img src="/images/gallery/Furfare/Infographic.png" alt="Infographic screen" /></a>,
+            <a href="/images/gallery/Furfare/GameFrame1.png"><img src="/images/gallery/Furfare/GameFrame1.png" alt="Game view from earlier playtest" /></a>,
+            <a href="/images/gallery/Furfare/GameFrame2.png"><img src="/images/gallery/Furfare/GameFrame2.png" alt="Game view from earlier playtest" /></a>,
+            <a href="/images/gallery/Furfare/TheEnd.png"><img src="/images/gallery/Furfare/TheEnd.png" alt="Game view from earlier playtest" /></a>,
+            <a href="/images/gallery/Furfare/Game_PlaytestW6.png"><img src="/images/gallery/Furfare/Game_PlaytestW6.png" alt="Game view from earlier playtest" /></a>,
+            <a href="/images/gallery/Furfare/Game_Playtest2.png"><img src="/images/gallery/Furfare/Game_Playtest2.png" alt="Game view from earlier playtest" /></a>,
 
         ],
-        starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
+        starterParagraphContent: await fetchMarkdownText(MD_Furfare_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_Furfare_Main),
     },
     {
         name: "Web Development Projects",
