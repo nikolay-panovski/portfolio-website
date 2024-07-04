@@ -1,4 +1,5 @@
 import { ReactComponent as UnityLogo } from "icons/icons8-unity.svg";
+//import { ReactComponent as GodotLogo } from "icons/Logo_Godot_Color.svg";
 import { ReactComponent as CSLogo } from "icons/Logo_C_sharp.svg";
 import { ReactComponent as JSLogo } from "icons/worldvectorlogo-javascript.svg";
 import { ReactComponent as LuaLogo } from "icons/Logo_Lua.svg";
@@ -11,8 +12,26 @@ import VueLogo from "icons/icons8-vue.png";
 import ProcessingLogo from "icons/processing-1024.png";
 import WebLogo from "icons/weblogos.png";
 import ASPLogo from "icons/aspnet.png";
+import GodotLogo from "icons/logo-godot-color.png";
 
 const ListOfProjectCards = [
+    {
+        name: "Godot - First mechanics",
+        coverUrl: "/images/Godot_Cover.png",
+        tags: ["Godot", "Games"],
+        durationDescriber: "Duration",
+        durationProperty: "2 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual",
+        clientDescriber: "",
+        clientProperty: "Personal/School assignment",
+        expandableIcons: [
+            { icon: /*<GodotLogo width="30px" height="30px"/>, propertyValue: "Godot"*/
+                <img src={GodotLogo} alt="Godot Engine logo" width="30px" height="30px" />, propertyValue: "Godot"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+        ],
+        cardText: `A sandbox with 5 functional platformer-related assets and 3 small gameplay levels! First project in Godot Engine.`
+    },
     {
         name: "Furfare",
         coverUrl: "/images/FurfareGameplay_Cover.png",

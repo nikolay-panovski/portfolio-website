@@ -18,6 +18,8 @@ import MD_TowerD_Starter from "components/ContentMarkdown/StarterParagraph/SA_To
 import MD_TowerD_Main from "components/ContentMarkdown/MainParagraph/SA_TowerD.md";
 import MD_TTT_Starter from "components/ContentMarkdown/StarterParagraph/TTT_Embed.md";
 import MD_TTT_Main from "components/ContentMarkdown/MainParagraph/TTT_Embed.md";
+import MD_Godot_Starter from "components/ContentMarkdown/StarterParagraph/Godot_First.md";
+import MD_Godot_Main from "components/ContentMarkdown/MainParagraph/Godot_First.md";
 
 import GitHubLogo from "icons/Logo_GitHub_Light.png";
 import UnityWebLogo from "icons/logo-unity-light.png";
@@ -28,6 +30,45 @@ async function fetchMarkdownText(markdown) {
 }
 
 const ListOfProjectContent = [
+    {
+        name: "Godot - First mechanics",
+        backgroundURL: "/images/Godot_Cover.png",
+        durationProperty: "2 weeks",
+        teamProperty: "Individual",
+        clientProperty: "",
+        locationProperty: "",
+        headerContent: [
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zajkubdLo20?si=aT8XWawoiC_QMtcy" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        ],
+        headerButtons: [
+            /** // NO WEB EXPORT DUE TO MASSIVE DIFFICULTIES EXPORTING+DEPLOYING GITHUB PAGES
+            <a href="https://nikolay-panovski.github.io//"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={UnityWebLogo} alt="Unity logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Play in browser</p>
+            </a>,/**/
+            <a href="https://github.com/nikolay-panovski/FirstMechanics/releases/tag/v1.0"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Download Godot export</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/FirstMechanics"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See GitHub source</p>
+            </a>,
+        ],
+        mainGalleryContent: [
+            <a href="/images/gallery/Godot_First/DOC_tutorial_OnTrigger.png"><img src="/images/gallery/Godot_First/DOC_tutorial_OnTrigger.png" alt="First Godot project" /></a>,
+            <a href="/images/gallery/Godot_First/DOC_tutorial_FullAirView.png"><img src="/images/gallery/Godot_First/DOC_tutorial_FullAirView.png" alt="First Godot project" /></a>,
+            <a href="/images/gallery/Godot_First/DOC_Level1_FullAirView.png"><img src="/images/gallery/Godot_First/DOC_Level1_FullAirView.png" alt="First Godot project" /></a>,
+            <a href="/images/gallery/Godot_First/DOC_Level2_FullAirView.png"><img src="/images/gallery/Godot_First/DOC_Level2_FullAirView.png" alt="First Godot project" /></a>,
+            <a href="/images/gallery/Godot_First/IMG_playercontroller_allthevariables.png"><img src="/images/gallery/Godot_First/IMG_playercontroller_allthevariables.png" alt="First Godot project" /></a>,
+            <a href="/images/gallery/Godot_First/IMG_Coin_Animator.png"><img src="/images/gallery/Godot_First/IMG_Coin_Animator.png" alt="First Godot project" /></a>,
+        ],
+        starterParagraphContent: await fetchMarkdownText(MD_Godot_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_Godot_Main),
+    },
     {
         name: "City games concept prototype",
         backgroundURL: "/images/Unity_Prototype_DetailsHeading.png",

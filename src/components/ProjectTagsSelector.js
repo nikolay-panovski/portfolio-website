@@ -6,6 +6,7 @@ function ProjectTagsSelector() {
 
     const usedTags = [
         "Unity",
+        "Godot",
         "JavaScript",
         "UI",
         "Device Communication",
