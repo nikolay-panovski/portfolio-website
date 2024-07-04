@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.abdb75b0.css",
-    "main.js": "/static/js/main.87c1eca5.js",
+    "main.js": "/static/js/main.948e1ca0.js",
     "static/media/processing-1024.png": "/static/media/processing-1024.5e0f04e4cdc1f2a8a534.png",
     "static/media/weblogos.png": "/static/media/weblogos.9e2517dc2f32727cd3ac.png",
     "static/media/aspnet.png": "/static/media/aspnet.62f07a000465e8f7d9e2.png",
     "static/media/492686_square.jpg": "/static/media/492686_square.f34080e1aa4911269d9d.jpg",
     "static/media/KatahdinRound-Bold.otf": "/static/media/KatahdinRound-Bold.5c99871ecc7c85432263.otf",
     "static/media/Simply Rounded Bold.ttf": "/static/media/Simply Rounded Bold.0fb670e29eaec829af52.ttf",
+    "static/media/logo-godot-color.png": "/static/media/logo-godot-color.e47ce5fd98272507b092.png",
     "static/media/mqtt.png": "/static/media/mqtt.d8a21607abd476982501.png",
     "static/media/Logo_C_sharp.svg": "/static/media/Logo_C_sharp.72d6dcc144316c8b0604497b10071d70.svg",
     "static/media/Logo_React.svg": "/static/media/Logo_React.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
@@ -29,11 +30,12 @@
     "static/media/icons8-external-link.svg": "/static/media/icons8-external-link.a33228e0c7ad32a062f17b1e104e9648.svg",
     "index.html": "/index.html",
     "static/media/worldvectorlogo-javascript.svg": "/static/media/worldvectorlogo-javascript.b879f838faf1cb951d1c2230fd933a39.svg",
+    "static/media/Godot_First.md": "/static/media/Godot_First.31d6cfe0d16ae931b73c.md",
     "main.abdb75b0.css.map": "/static/css/main.abdb75b0.css.map",
-    "main.87c1eca5.js.map": "/static/js/main.87c1eca5.js.map"
+    "main.948e1ca0.js.map": "/static/js/main.948e1ca0.js.map"
   },
   "entrypoints": [
     "static/css/main.abdb75b0.css",
-    "static/js/main.87c1eca5.js"
+    "static/js/main.948e1ca0.js"
   ]
 }
